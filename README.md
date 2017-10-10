@@ -16,7 +16,7 @@
 
 ## Vim
 I use the [`gruvbox`](https://github.com/morhetz/gruvbox) theme for Vim, but it sometimes messes with the terminal transparency.
-If you have this problem, I have a fork of the `gruvbox` theme [here](https://github.com/lyneca/gruvbox) which fixes this issue.
+If you have this problem, I have a fork of [here](https://github.com/lyneca/gruvbox) which fixes this issue.
 
 ## Screenshots
 ![Desktop](.screenshots/main.png)
