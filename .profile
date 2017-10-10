@@ -15,4 +15,5 @@ alias update="pacman -Syu"
 alias oops='sudo $(fc -ln -1)'
 alias please='sudo '
 alias venv="python3 -m venv "
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 setxkbmap -option caps:escape
