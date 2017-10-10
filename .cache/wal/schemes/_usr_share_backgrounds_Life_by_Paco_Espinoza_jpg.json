@@ -1,0 +1,26 @@
+{
+    "wallpaper": "/usr/share/backgrounds/Life_by_Paco_Espinoza.jpg",
+    "special": {
+        "background": "#020602",
+        "foreground": "#CDD9B9",
+        "cursor": "#CDD9B9"
+    },
+    "colors": {
+        "color0": "#020602",
+        "color1": "#778733",
+        "color2": "#798950",
+        "color3": "#7D956E",
+        "color4": "#9DA758",
+        "color5": "#A1AC51",
+        "color6": "#CFD7A3",
+        "color7": "#CDD9B9",
+        "color8": "#676967",
+        "color9": "#778733",
+        "color10": "#798950",
+        "color11": "#7D956E",
+        "color12": "#9DA758",
+        "color13": "#A1AC51",
+        "color14": "#CFD7A3",
+        "color15": "#CDD9B9"
+    }
+}

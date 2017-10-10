@@ -1,0 +1,26 @@
+{
+    "wallpaper": "/usr/share/backgrounds/gnome/Godafoss_Iceland.jpg",
+    "special": {
+        "background": "#0B110D",
+        "foreground": "#BDCDC6",
+        "cursor": "#BDCDC6"
+    },
+    "colors": {
+        "color0": "#0B110D",
+        "color1": "#8D8B67",
+        "color2": "#296282",
+        "color3": "#637A84",
+        "color4": "#318F8B",
+        "color5": "#669D9A",
+        "color6": "#96ACAA",
+        "color7": "#BDCDC6",
+        "color8": "#6c706d",
+        "color9": "#8D8B67",
+        "color10": "#296282",
+        "color11": "#637A84",
+        "color12": "#318F8B",
+        "color13": "#669D9A",
+        "color14": "#96ACAA",
+        "color15": "#BDCDC6"
+    }
+}

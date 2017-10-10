@@ -1,0 +1,26 @@
+{
+    "wallpaper": "/usr/share/backgrounds/TCP118v1_by_Tiziano_Consonni.jpg",
+    "special": {
+        "background": "#0F0E0D",
+        "foreground": "#EEEEF0",
+        "cursor": "#EEEEF0"
+    },
+    "colors": {
+        "color0": "#0F0E0D",
+        "color1": "#6C89B3",
+        "color2": "#6E95CD",
+        "color3": "#B2AAA4",
+        "color4": "#98B1D5",
+        "color5": "#B5C8E2",
+        "color6": "#D6DADF",
+        "color7": "#EEEEF0",
+        "color8": "#6f6e6d",
+        "color9": "#6C89B3",
+        "color10": "#6E95CD",
+        "color11": "#B2AAA4",
+        "color12": "#98B1D5",
+        "color13": "#B5C8E2",
+        "color14": "#D6DADF",
+        "color15": "#EEEEF0"
+    }
+}

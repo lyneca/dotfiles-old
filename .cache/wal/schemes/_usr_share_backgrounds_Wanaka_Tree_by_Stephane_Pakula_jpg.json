@@ -1,0 +1,26 @@
+{
+    "wallpaper": "/usr/share/backgrounds/Wanaka_Tree_by_Stephane_Pakula.jpg",
+    "special": {
+        "background": "#2e2a21",
+        "foreground": "#BEB3B5",
+        "cursor": "#BEB3B5"
+    },
+    "colors": {
+        "color0": "#2e2a21",
+        "color1": "#20528D",
+        "color2": "#63698B",
+        "color3": "#887B87",
+        "color4": "#C37584",
+        "color5": "#7A91B0",
+        "color6": "#9F8F96",
+        "color7": "#BEB3B5",
+        "color8": "#817f79",
+        "color9": "#20528D",
+        "color10": "#63698B",
+        "color11": "#887B87",
+        "color12": "#C37584",
+        "color13": "#7A91B0",
+        "color14": "#9F8F96",
+        "color15": "#BEB3B5"
+    }
+}

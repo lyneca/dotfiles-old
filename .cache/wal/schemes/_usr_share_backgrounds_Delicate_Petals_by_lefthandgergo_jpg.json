@@ -1,0 +1,26 @@
+{
+    "wallpaper": "/usr/share/backgrounds/Delicate_Petals_by_lefthandgergo.jpg",
+    "special": {
+        "background": "#1B0409",
+        "foreground": "#F0C4C4",
+        "cursor": "#F0C4C4"
+    },
+    "colors": {
+        "color0": "#1B0409",
+        "color1": "#DE600E",
+        "color2": "#AE3941",
+        "color3": "#FDA225",
+        "color4": "#F9B958",
+        "color5": "#715487",
+        "color6": "#C04AA7",
+        "color7": "#F0C4C4",
+        "color8": "#76686b",
+        "color9": "#DE600E",
+        "color10": "#AE3941",
+        "color11": "#FDA225",
+        "color12": "#F9B958",
+        "color13": "#715487",
+        "color14": "#C04AA7",
+        "color15": "#F0C4C4"
+    }
+}

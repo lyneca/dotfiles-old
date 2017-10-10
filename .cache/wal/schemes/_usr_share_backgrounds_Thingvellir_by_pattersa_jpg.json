@@ -1,0 +1,26 @@
+{
+    "wallpaper": "/usr/share/backgrounds/Thingvellir_by_pattersa.jpg",
+    "special": {
+        "background": "#291A0E",
+        "foreground": "#DAE2E4",
+        "cursor": "#DAE2E4"
+    },
+    "colors": {
+        "color0": "#291A0E",
+        "color1": "#8D8581",
+        "color2": "#A1A8B1",
+        "color3": "#D4BDA6",
+        "color4": "#9DB1C4",
+        "color5": "#AAB9C8",
+        "color6": "#B5C7D2",
+        "color7": "#DAE2E4",
+        "color8": "#7e756e",
+        "color9": "#8D8581",
+        "color10": "#A1A8B1",
+        "color11": "#D4BDA6",
+        "color12": "#9DB1C4",
+        "color13": "#AAB9C8",
+        "color14": "#B5C7D2",
+        "color15": "#DAE2E4"
+    }
+}

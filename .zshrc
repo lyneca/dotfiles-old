@@ -8,6 +8,10 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="steeef"
+setsid wal -rt
+
+# Hack for overriding wal's color scheme
+printf "%b" "\033]11;#202020\007"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

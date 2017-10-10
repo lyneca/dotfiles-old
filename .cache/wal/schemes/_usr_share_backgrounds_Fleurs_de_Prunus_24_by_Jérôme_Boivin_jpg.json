@@ -1,0 +1,26 @@
+{
+    "wallpaper": "/usr/share/backgrounds/Fleurs_de_Prunus_2\uf0224_by_J\u00e9r\u00f4me_Boivin.jpg",
+    "special": {
+        "background": "#240803",
+        "foreground": "#D5C3C3",
+        "cursor": "#D5C3C3"
+    },
+    "colors": {
+        "color0": "#240803",
+        "color1": "#B68573",
+        "color2": "#7B7F8D",
+        "color3": "#927C84",
+        "color4": "#928993",
+        "color5": "#A79AA3",
+        "color6": "#D8A8A0",
+        "color7": "#D5C3C3",
+        "color8": "#7b6a67",
+        "color9": "#B68573",
+        "color10": "#7B7F8D",
+        "color11": "#927C84",
+        "color12": "#928993",
+        "color13": "#A79AA3",
+        "color14": "#D8A8A0",
+        "color15": "#D5C3C3"
+    }
+}

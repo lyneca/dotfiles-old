@@ -1,0 +1,26 @@
+{
+    "wallpaper": "/usr/share/backgrounds/Darkening_Clockwork_by_Matt_Katzenberger.jpg",
+    "special": {
+        "background": "#010101",
+        "foreground": "#E1DDCF",
+        "cursor": "#E1DDCF"
+    },
+    "colors": {
+        "color0": "#010101",
+        "color1": "#847B67",
+        "color2": "#928A76",
+        "color3": "#767C8A",
+        "color4": "#A5A195",
+        "color5": "#BDBBB2",
+        "color6": "#D4CBB3",
+        "color7": "#E1DDCF",
+        "color8": "#666666",
+        "color9": "#847B67",
+        "color10": "#928A76",
+        "color11": "#767C8A",
+        "color12": "#A5A195",
+        "color13": "#BDBBB2",
+        "color14": "#D4CBB3",
+        "color15": "#E1DDCF"
+    }
+}

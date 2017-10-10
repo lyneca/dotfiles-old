@@ -1,0 +1,26 @@
+{
+    "wallpaper": "/usr/share/backgrounds/Golden_leaves_by_Mauro_Campanelli.jpg",
+    "special": {
+        "background": "#130E06",
+        "foreground": "#FFF8C9",
+        "cursor": "#FFF8C9"
+    },
+    "colors": {
+        "color0": "#130E06",
+        "color1": "#966909",
+        "color2": "#AE7103",
+        "color3": "#C77A02",
+        "color4": "#DA9C13",
+        "color5": "#DCB540",
+        "color6": "#FDE79D",
+        "color7": "#FFF8C9",
+        "color8": "#716e69",
+        "color9": "#966909",
+        "color10": "#AE7103",
+        "color11": "#C77A02",
+        "color12": "#DA9C13",
+        "color13": "#DCB540",
+        "color14": "#FDE79D",
+        "color15": "#FFF8C9"
+    }
+}

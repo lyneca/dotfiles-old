@@ -1,0 +1,24 @@
+wallpaper: "/usr/share/backgrounds/Early_Morning_by_Robert_Katzki.jpg"
+
+special:
+    background: "#0E1211"
+    foreground: "#D3BCA4"
+    cursor: "#D3BCA4"
+
+colors:
+    color0: "#0E1211"
+    color": "#885F3C"
+    color2: "#8B7666"
+    color3: "#9B8975"
+    color4: "#CFA26F"
+    color5: "#6E7F89"
+    color6: "#A39890"
+    color7: "#D3BCA4"
+    color8: "#6e7070"
+    color9: "#885F3C"
+    color10: "#8B7666"
+    color11: "#9B8975"
+    color12: "#CFA26F"
+    color13: "#6E7F89"
+    color14: "#A39890"
+    color15: "#D3BCA4"

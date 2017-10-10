@@ -1,0 +1,26 @@
+{
+    "wallpaper": "/usr/share/backgrounds/Forest2.jpg",
+    "special": {
+        "background": "#170F14",
+        "foreground": "#B1C8C3",
+        "cursor": "#B1C8C3"
+    },
+    "colors": {
+        "color0": "#170F14",
+        "color1": "#718E8F",
+        "color2": "#6F989A",
+        "color3": "#869E9B",
+        "color4": "#94AFAB",
+        "color5": "#A4BAB4",
+        "color6": "#ACC2BC",
+        "color7": "#B1C8C3",
+        "color8": "#736f72",
+        "color9": "#718E8F",
+        "color10": "#6F989A",
+        "color11": "#869E9B",
+        "color12": "#94AFAB",
+        "color13": "#A4BAB4",
+        "color14": "#ACC2BC",
+        "color15": "#B1C8C3"
+    }
+}

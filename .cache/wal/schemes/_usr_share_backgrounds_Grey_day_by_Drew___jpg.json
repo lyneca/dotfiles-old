@@ -1,0 +1,26 @@
+{
+    "wallpaper": "/usr/share/backgrounds/Grey_day_by_Drew__.jpg",
+    "special": {
+        "background": "#000000",
+        "foreground": "#F4F4F4",
+        "cursor": "#F4F4F4"
+    },
+    "colors": {
+        "color0": "#000000",
+        "color1": "#919191",
+        "color2": "#A8A8A8",
+        "color3": "#B7B7B7",
+        "color4": "#C7C7C7",
+        "color5": "#D8D8D8",
+        "color6": "#E7E7E7",
+        "color7": "#F4F4F4",
+        "color8": "#666666",
+        "color9": "#919191",
+        "color10": "#A8A8A8",
+        "color11": "#B7B7B7",
+        "color12": "#C7C7C7",
+        "color13": "#D8D8D8",
+        "color14": "#E7E7E7",
+        "color15": "#F4F4F4"
+    }
+}

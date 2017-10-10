@@ -1,0 +1,26 @@
+{
+    "wallpaper": "/usr/share/backgrounds/Icy_Grass_by_Raymond_Lavoie.jpg",
+    "special": {
+        "background": "#2E2D29",
+        "foreground": "#D7D7D8",
+        "cursor": "#D7D7D8"
+    },
+    "colors": {
+        "color0": "#2E2D29",
+        "color1": "#8E8F91",
+        "color2": "#979798",
+        "color3": "#9E9FA1",
+        "color4": "#A6A6A8",
+        "color5": "#B4B4B6",
+        "color6": "#BEBEC1",
+        "color7": "#D7D7D8",
+        "color8": "#81817e",
+        "color9": "#8E8F91",
+        "color10": "#979798",
+        "color11": "#9E9FA1",
+        "color12": "#A6A6A8",
+        "color13": "#B4B4B6",
+        "color14": "#BEBEC1",
+        "color15": "#D7D7D8"
+    }
+}

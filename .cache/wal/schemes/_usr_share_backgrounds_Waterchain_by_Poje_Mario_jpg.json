@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/usr/share/backgrounds/Waterchain_by_Poje_Mario.jpg",
+    "special": {
+        "background": "#000007",
+        "foreground": "#7E95A0",
+        "cursor": "#7E95A0"
+    },
+    "colors": {
+        "color0": "#000007",
+        "color1": "#455B67",
+        "color2": "#4B6D77",
+        "color3": "#5B7983",
+        "color4": "#617E88",
+        "color5": "#6F8A93",
+        "color6": "#7E95A0",
+        "color7": "#91A5AB",
+        "color8": "#66666a",
+        "color9": "#355A65",
+        "color10": "#455B67",
+        "color11": "#4B6D77",
+        "color12": "#5B7983",
+        "color13": "#617E88",
+        "color14": "#6F8A93",
+        "color15": "#7E95A0",
+        "color16": "#91A5AB",
+        "color17": "#CBD5D8"
+    }
+}

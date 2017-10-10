@@ -44,7 +44,11 @@ bindsym $mod+Shift+q kill
 
 # start program launcher
 #bindsym $mod+d exec --no-startup-id dmenu_recency
-bindsym $mod+d exec --no-startup-id rofi -show run -sidebar-mode -bw 2 -location 2 -yoffset 100 -run-list-command ". ~/bin/list_aliases.sh" -run-command "/bin/bash -i -c '{cmd}'" -rnow
+bindsym $mod+d exec --no-startup-id rofi -show run -sidebar-mode -location 2 -yoffset 100 -run-list-command ". ~/bin/list_aliases.sh" -run-command "/bin/bash -i -c '{cmd}'" -rnow
+bindsym $mod+Tab exec --no-startup-id rofi -show window -sidebar-mode -location 2 -yoffset 100 -rnow
+bindsym $mod+s exec --no-startup-id rofi -show ssh -sidebar-mode -location 2 -yoffset 100 -rnow -ssh-command "xfce4-terminal -e 'ssh {host}'"
+
+
 bindsym $mod+Shift+d exec --no-startup-id rofi -show run -sidebar-mode -bw 2 -location 2 -yoffset 100 -run-list-command ". ~/bin/list_aliases.sh" -run-command "/bin/bash -i -c '{cmd}'" -rnow -disable-history
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -98,9 +102,9 @@ bindsym $mod+q split toggle
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+Ctrl+s layout stacking
-bindsym $mod+Ctrl+w layout tabbed
-bindsym $mod+Ctrl+e layout toggle split
+# bindsym $mod+Ctrl+s layout stacking
+# bindsym $mod+Ctrl+w layout tabbed
+# bindsym $mod+Ctrl+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -194,6 +198,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 # assign [class="Slack"] $ws5
 
 # Open specific applications in floating mode
+for_window [instance="rofi"] border none 
 for_window [instance="xfce4-terminal"] border none 
 for_window [instance="xfce4-terminal" title="floating"] floating enable border none 
 for_window [title="alsamixer"] floating enable border pixel 1
