@@ -8,7 +8,7 @@ foreground='#D3BCA4'
 cursor='#D3BCA4'
 
 # Colors
-color0='#202020'
+color0='#0E1211'
 color1='#885F3C'
 color2='#8B7666'
 color3='#9B8975'

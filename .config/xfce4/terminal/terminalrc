@@ -29,8 +29,9 @@ BackgroundDarkness=0.800000
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
 ScrollingUnlimited=TRUE
 ColorPalette=#000000;#cd0000;#00cd00;#cdcd00;#0000cd;#cd00cd;#00cdcd;#e5e5e5;#7f7f7f;#ff0000;#00ff00;#ffff00;#5c5cff;#ff00ff;#00ffff;#ffffff
-ColorBackground=#206d206d206d
+ColorBackground=#404030302020
 BackgroundImageShading=0.800000
 ColorForeground=#d3d3d7d7cfcf
 BackgroundImageFile=/home/lyneca/Pictures/sheev.jpg
+ScrollingOnOutput=FALSE
 

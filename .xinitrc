@@ -40,3 +40,4 @@ fi
 
 wal -Rt
 exec i3
+wal -Rt  # :(

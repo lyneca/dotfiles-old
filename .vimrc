@@ -30,6 +30,8 @@ Plugin 'arcticicestudio/nord-vim'
 Plugin 'vim-scripts/brainfuck-syntax'
 " Plugin 'jiangmiao/auto-pairs'
 Plugin 'mattn/emmet-vim'
+Plugin 'cespare/vim-toml'
+Plugin 'notpratheek/vim-luna'
 
 
 call vundle#end()            " required
@@ -38,8 +40,7 @@ filetype plugin indent on    " required
 set tabstop=4
 set shiftwidth=4
 set softtabstop=0
-set noexpandtab
-" set expandtab
+set expandtab
 
 let g:NERDSpaceDelims = 1
 let g:NERDAltDelims_java = 1
@@ -112,6 +113,7 @@ vnoremap <right> <nop>
 " B A <Start>
 
 highlight Normal ctermbg=NONE
+nnoremap <esc> :noh<return><esc>
 
 " Commands
-command Pdf execute "!md2pdf % %:r.pdf --css=/usr/share/github.css &"
+command! Pdf execute "!md2pdf % %:r.pdf --css=/usr/share/github.css &"

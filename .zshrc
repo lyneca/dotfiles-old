@@ -97,8 +97,6 @@ export CLASSPATH=$CLASSPATH:$JUNIT_HOME/junit4.10.jar:.
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ANDROID_HOME=/opt/android-sdk
 export MOZ_USE_XINPUT2=1
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 source ~/.profile
 
