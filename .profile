@@ -20,5 +20,3 @@ alias vim=nvim
 alias big='du -ad 1 | sort -k 1n'
 
 setxkbmap -option caps:escape
-
-bindkey -v '^?' backward-delete-char
