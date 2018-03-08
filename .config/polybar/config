@@ -59,7 +59,7 @@ font-2 = Termsynu:size=8:antialias=false;-2
 font-3 = FontAwesome:size=10;0
 
 modules-left = i3
-modules-right = volume wireless-network battery date powermenu 
+modules-right = github volume wireless-network battery date
 
 [bar/bottom]
 ;monitor = eDP-1
@@ -143,66 +143,6 @@ animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-framerate = 750
 
-[module/bspwm]
-type = internal/bspwm
-
-ws-icon-0 = term;
-ws-icon-1 = web;
-ws-icon-2 = code;
-ws-icon-3 = music;
-ws-icon-4 = irssi;
-ws-icon-default = 
-
-format = <label-state> <label-mode>
-
-label-dimmed-underline = ${BAR.background}
-
-label-active = %icon%
-padding-top = 10
-label-active-foreground = #fff
-label-active-background = #773f3f3f
-label-active-underline = #c9665e
-label-active-font = 4
-label-active-padding = 4
-
-label-occupied = %icon%
-label-occupied-foreground = #dd
-label-occupied-underline = #666
-label-occupied-font = 4
-label-occupied-padding = 4
-
-label-urgent = %icon%
-label-urgent-foreground = #000000
-label-urgent-background = #bd2c40
-label-urgent-underline = #9b0a20
-label-urgent-font = 4
-label-urgent-padding = 4
-
-label-empty = %icon%
-label-empty-foreground = #55
-label-empty-font = 4
-label-empty-padding = 4
-
-label-monocle = 
-label-monocle-underline = ${module/bspwm.label-active-underline}
-label-monocle-background = #33ffffff
-label-monocle-padding = 2
-
-label-locked = 
-label-locked-foreground = #bd2c40
-label-locked-underline = ${module/bspwm.label-monocle-underline}
-label-locked-padding = ${module/bspwm.label-monocle-padding}
-
-label-sticky = 
-label-sticky-foreground = #fba922
-label-sticky-underline = ${module/bspwm.label-monocle-underline}
-label-sticky-padding = ${module/bspwm.label-monocle-padding}
-
-label-private = 
-label-private-foreground = #bd2c40
-label-private-underline = ${module/bspwm.label-monocle-underline}
-label-private-padding = ${module/bspwm.label-monocle-padding}
-
 [module/i3]
 type = internal/i3
 format = <label-state><label-mode>
@@ -281,7 +221,7 @@ ramp-coreload-7-foreground = #ff5555
 
 [module/date]
 type = internal/date
-date =    %%{F#99}%Y-%m-%d%%{F-}  %%{F#fff}%H:%M%%{F-}
+date = %%{F#99}%Y-%m-%d%%{F-}  %%{F#fff}%H:%M%%{F-}
 ;date-alt = %%{F#fff}%A, %d %B %Y  %%{F#fff}%H:%M%%{F#666}:%%{F#fba922}%S%%{F-}
 
 [module/memory]
@@ -336,12 +276,11 @@ interface = wlp2s0
 interval = 3.0
 ping-interval = 10
 
-format-connected = <ramp-signal> <label-connected>
-label-connected = %{A:nm-connection-editor&:}%essid%%{A}
-label-disconnected =    %{A:nm-connection-editor&:}not connected%{A}
+format-connected = %{A:networkmanager_dmenu&:}<label-connected>%{A}
+label-connected = %essid%
+label-disconnected = [no network]
 label-disconnected-foreground = #66
-
-format-disconnected = %{A:nm-connection-editor&:}%{A}
+format-disconnected = %{A:networkmanager_dmenu&:}<label-disconnected>%{A}
 
 ramp-signal-0 = 
 ramp-signal-1 = 
@@ -369,8 +308,8 @@ master-mixer = Master
 # headphone-mixer = Headphone
 # headphone-id = 9
 
-format-volume = <ramp-volume> <label-volume>
-label-muted =   muted
+format-volume = <label-volume>
+label-muted = [muted]
 label-muted-foreground = #66
 
 ramp-volume-0 = 
@@ -414,5 +353,19 @@ menu-2-1-exec = menu_open-0
 type = internal/date
 interval = 2
 date = %%{F#999}%Y-%m-%d%%{F-}  %%{F#fff}%H:%M%%{F-}
+
+[module/github]
+type = internal/github
+
+; Accessing an access token stored in file
+token = ${file:~/.github_token}
+
+; Whether empty notifications should be displayed or not
+empty-notifications = true
+
+; Number of seconds in between requests
+interval = 10
+
+label = %{A:firefox https\://github.com/notifications:}  %notifications%%{A}
 
 ; vim:ft=dosini

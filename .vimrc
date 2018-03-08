@@ -60,6 +60,7 @@ highlight NonText ctermbg=none guibg=NONE
 
 set background=dark
 set laststatus=2
+set updatetime=750
 set mouse=a
 let g:lightline = {  
  \ 'colorscheme': 'solarized',
@@ -95,6 +96,8 @@ set noeb novb t_vb=
 
 " Fullscreen button. Windows only.
 " map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
+
+let g:ycm_server_python_interpreter = '/usr/bin/python2'
 
 " Hacker Mode
 noremap <up> <nop>
