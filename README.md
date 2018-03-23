@@ -20,13 +20,14 @@
 - [`dunst`](https://github.com/dunst-project/dunst) - Notifications
 - [`gruvbox`](https://github.com/morhetz/gruvbox) - Vim theme
 
-## Vim
-
 ## Screenshots
-![lots of windows](.screenshots/empty.png)
-![full workspaces](.screenshots/full.png)
-![floating window](.screenshots/floating.png)
-![floating window on empty screen](.screenshots/floating_empty.png)
+![empty background](.screenshots/background.png)
+![floating window on empty screen](.screenshots/float_empty.png)
+![empty fullscreen window](.screenshots/full_empty.png)
+![geometry git plugin](.screenshots/full_git.png)
+![neofetch](.screenshots/neofetch.png)
+![three-way split](.screenshots/three_empty.png)
+![three-way split with cava](.screenshots/three_cava.png)
 
 ## Credits
 - Polybar theme heavily based off [jaagr's Space theme](https://github.com/jaagr/dots/tree/master/.local/etc/themer/themes/space).
