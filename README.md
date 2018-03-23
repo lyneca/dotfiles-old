@@ -30,5 +30,6 @@
 ![three-way split with cava](.screenshots/three_cava.png)
 
 ## Credits
-- Polybar theme heavily based off [jaagr's Space theme](https://github.com/jaagr/dots/tree/master/.local/etc/themer/themes/space).
+- Polybar theme heavily based off [jaagr's Space theme](https://github.com/jaagr/dots/tree/master/.local/etc/themer/themes/space)
+- Wallpaper by /u/Ryan3395 ([source](https://redd.it/6dvpxc)), based off a wallpaper from the excellent game [Firewatch](http://www.firewatchgame.com/)
 - All images/media belong to their respective owners
