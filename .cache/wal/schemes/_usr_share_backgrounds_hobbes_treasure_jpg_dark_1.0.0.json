@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/usr/share/backgrounds/hobbes/treasure.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0D0803",
+        "foreground": "#e9e7e2",
+        "cursor": "#e9e7e2"
+    },
+    "colors": {
+        "color0": "#0D0803",
+        "color1": "#AC9266",
+        "color2": "#CCA741",
+        "color3": "#B0A595",
+        "color4": "#C7B19D",
+        "color5": "#D1CAB0",
+        "color6": "#D5D4CF",
+        "color7": "#e9e7e2",
+        "color8": "#a3a19e",
+        "color9": "#AC9266",
+        "color10": "#CCA741",
+        "color11": "#B0A595",
+        "color12": "#C7B19D",
+        "color13": "#D1CAB0",
+        "color14": "#D5D4CF",
+        "color15": "#e9e7e2"
+    }
+}

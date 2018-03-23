@@ -1,0 +1,26 @@
+{
+    "wallpaper": "/usr/share/backgrounds/hobbes/stream.jpg",
+    "special": {
+        "background": "#0A0706",
+        "foreground": "#FFFFFF",
+        "cursor": "#FFFFFF"
+    },
+    "colors": {
+        "color0": "#0A0706",
+        "color1": "#74748A",
+        "color2": "#A3A0A0",
+        "color3": "#E3DAA7",
+        "color4": "#B7B5C3",
+        "color5": "#DDDDD7",
+        "color6": "#EDEFEC",
+        "color7": "#FFFFFF",
+        "color8": "#6c6a69",
+        "color9": "#74748A",
+        "color10": "#A3A0A0",
+        "color11": "#E3DAA7",
+        "color12": "#B7B5C3",
+        "color13": "#DDDDD7",
+        "color14": "#EDEFEC",
+        "color15": "#FFFFFF"
+    }
+}

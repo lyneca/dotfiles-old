@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/usr/share/backgrounds/Blue_box_number_2_by_orb9220.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0c0b",
+        "foreground": "#7fdcec",
+        "cursor": "#7fdcec"
+    },
+    "colors": {
+        "color0": "#0c0c0b",
+        "color1": "#4B4A48",
+        "color2": "#69675B",
+        "color3": "#079EAB",
+        "color4": "#53A7A7",
+        "color5": "#06B2CF",
+        "color6": "#0AB8E3",
+        "color7": "#7fdcec",
+        "color8": "#589aa5",
+        "color9": "#4B4A48",
+        "color10": "#69675B",
+        "color11": "#079EAB",
+        "color12": "#53A7A7",
+        "color13": "#06B2CF",
+        "color14": "#0AB8E3",
+        "color15": "#7fdcec"
+    }
+}

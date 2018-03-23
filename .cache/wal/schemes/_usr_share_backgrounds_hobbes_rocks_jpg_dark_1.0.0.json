@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/usr/share/backgrounds/hobbes/rocks.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0B0606",
+        "foreground": "#e8e6e5",
+        "cursor": "#e8e6e5"
+    },
+    "colors": {
+        "color0": "#0B0606",
+        "color1": "#D1AB30",
+        "color2": "#8F7B86",
+        "color3": "#989292",
+        "color4": "#B0AFB0",
+        "color5": "#D6C0AF",
+        "color6": "#D0CFD0",
+        "color7": "#e8e6e5",
+        "color8": "#a2a1a0",
+        "color9": "#D1AB30",
+        "color10": "#8F7B86",
+        "color11": "#989292",
+        "color12": "#B0AFB0",
+        "color13": "#D6C0AF",
+        "color14": "#D0CFD0",
+        "color15": "#e8e6e5"
+    }
+}

@@ -1,14 +1,13 @@
 {
     "wallpaper": "/usr/share/backgrounds/firewatch_greyscale.jpg",
     "alpha": "100",
-
     "special": {
-        "background": "#202020",
+        "background": "#0E0E0E",
         "foreground": "#e1e1e1",
         "cursor": "#e1e1e1"
     },
     "colors": {
-        "color0": "#202020",
+        "color0": "#0E0E0E",
         "color1": "#535353",
         "color2": "#787878",
         "color3": "#8A8A8A",

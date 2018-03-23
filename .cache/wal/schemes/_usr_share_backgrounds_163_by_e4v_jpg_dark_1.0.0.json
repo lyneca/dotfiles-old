@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/usr/share/backgrounds/163_by_e4v.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1b2747",
+        "foreground": "#dbdfe2",
+        "cursor": "#dbdfe2"
+    },
+    "colors": {
+        "color0": "#1b2747",
+        "color1": "#9CA1AD",
+        "color2": "#99A5B6",
+        "color3": "#C4BFBC",
+        "color4": "#9CAAC2",
+        "color5": "#AEB7C7",
+        "color6": "#BAC4D0",
+        "color7": "#dbdfe2",
+        "color8": "#999c9e",
+        "color9": "#9CA1AD",
+        "color10": "#99A5B6",
+        "color11": "#C4BFBC",
+        "color12": "#9CAAC2",
+        "color13": "#AEB7C7",
+        "color14": "#BAC4D0",
+        "color15": "#dbdfe2"
+    }
+}

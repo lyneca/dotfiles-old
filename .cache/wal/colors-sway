@@ -1,0 +1,21 @@
+set $wallpaper /usr/share/backgrounds/firewatch_greyscale.jpg
+
+set $background #202020
+set $foreground #e1e1e1
+
+set $color0 #202020
+set $color1 #535353
+set $color2 #787878
+set $color3 #8A8A8A
+set $color4 #9A9A9A
+set $color5 #A7A7A7
+set $color6 #C8C8C8
+set $color7 #e1e1e1
+set $color8 #9d9d9d
+set $color9 #535353
+set $color10 #787878
+set $color11 #8A8A8A
+set $color12 #9A9A9A
+set $color13 #A7A7A7
+set $color14 #C8C8C8
+set $color15 #e1e1e1

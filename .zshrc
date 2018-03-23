@@ -2,16 +2,34 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/lyneca/.oh-my-zsh
+export ZSH=/home/lyneca/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="steeef"
-setsid wal -rt
+ZSH_THEME="geometry/geometry"
+
+export GEOMETRY_PROMPT_PLUGINS=(exec_time virtualenv jobs git hg node rustup)
+
+PROMPT_GEOMETRY_COLORIZE_ROOT=true
+PROMPT_GEOMETRY_EXEC_TIME=true
+GEOMETRY_SYMBOL_PROMPT="⯈"                  # default prompt symbol
+GEOMETRY_SYMBOL_RPROMPT="╶ "                 # multiline prompts
+GEOMETRY_SYMBOL_EXIT_VALUE="⯈"              # displayed when exit value is != 0
+GEOMETRY_SYMBOL_EXIT_VALUE="◆"              # displayed when exit value is != 0
+GEOMETRY_SYMBOL_ROOT="◈"                    # when logged in user is root
+GEOMETRY_PROMPT_PREFIX="\n"
+GEOMETRY_PROMPT_PREFIX_SPACER=""
+GEOMETRY_DIR_SPACER="\n"
+GEOMETRY_PROMPT_SUFFIX="$"
+
+
+
+# setsid wal -t
+cat ~/.cache/wal/sequences
 
 # Hack for overriding wal's color scheme
-printf "%b" "\033]11;#202020\007"
+# printf "%b" "\033]11;#202020\007"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -33,7 +51,7 @@ printf "%b" "\033]11;#202020\007"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -55,7 +73,7 @@ printf "%b" "\033]11;#202020\007"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow)
+plugins=(git git-flow zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,4 +117,3 @@ export ANDROID_HOME=/opt/android-sdk
 export MOZ_USE_XINPUT2=1
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 source ~/.profile
-

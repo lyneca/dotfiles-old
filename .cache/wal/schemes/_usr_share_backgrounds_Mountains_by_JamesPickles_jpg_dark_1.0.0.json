@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/usr/share/backgrounds/Mountains_by_JamesPickles.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0B101F",
+        "foreground": "#ccd2dd",
+        "cursor": "#ccd2dd"
+    },
+    "colors": {
+        "color0": "#0B101F",
+        "color1": "#817F8F",
+        "color2": "#7787AE",
+        "color3": "#6A93D2",
+        "color4": "#6A94D2",
+        "color5": "#A2ABBF",
+        "color6": "#90B1D6",
+        "color7": "#ccd2dd",
+        "color8": "#8e939a",
+        "color9": "#817F8F",
+        "color10": "#7787AE",
+        "color11": "#6A93D2",
+        "color12": "#6A94D2",
+        "color13": "#A2ABBF",
+        "color14": "#90B1D6",
+        "color15": "#ccd2dd"
+    }
+}

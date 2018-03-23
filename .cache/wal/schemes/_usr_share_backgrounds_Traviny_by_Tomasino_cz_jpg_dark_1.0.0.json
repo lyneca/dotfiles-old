@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/usr/share/backgrounds/Traviny_by_Tomasino.cz.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1b151e",
+        "foreground": "#d9d9d0",
+        "cursor": "#d9d9d0"
+    },
+    "colors": {
+        "color0": "#1b151e",
+        "color1": "#586FA7",
+        "color2": "#847D84",
+        "color3": "#7A98AB",
+        "color4": "#708DB0",
+        "color5": "#7B9DC3",
+        "color6": "#95A5AA",
+        "color7": "#d9d9d0",
+        "color8": "#979791",
+        "color9": "#586FA7",
+        "color10": "#847D84",
+        "color11": "#7A98AB",
+        "color12": "#708DB0",
+        "color13": "#7B9DC3",
+        "color14": "#95A5AA",
+        "color15": "#d9d9d0"
+    }
+}
