@@ -194,3 +194,25 @@
 #    summary = "foobar"
 #    format = ""
 
+[brightness]
+    appname = xfce4-power-manager
+    icon = display-brightness-symbolic
+    format = "<b>Brightness</b>: %p"
+    # script = ~/.config/dunst/power.sh
+
+[volume]
+    appname = pa-applet
+    format = "<b>Volume</b>: %p"
+
+[battery_full]
+    icon = battery-full-charged
+    format = "Fully charged"
+
+[battery_empty]
+    icon = battery-caution
+    format = "Low battery"
+
+[battery_discharging]
+    icon = battery-full
+    format = "Battery discharging"
+# vim: ft=cfg

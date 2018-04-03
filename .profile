@@ -1,5 +1,8 @@
+if [ $(du -d0 ~/.cache | cut -f1) -gt 1000000 ]; then
+    echo "Warning: $(du -hd0 ~/.cache | cut -f1) in ~/.cache";
+fi
 
-if [ $(df /tmp --output=used | tail -n 1) -gt 100000 ]; then
+if [ $(df /tmp --output=used | tail -n 1) -gt 1000000 ]; then
     echo "Warning: $(df -h /tmp --output=used | tail -n 1 | tr -d ' ') in /tmp";
 fi
 

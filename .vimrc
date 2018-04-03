@@ -120,4 +120,4 @@ highlight Normal ctermbg=NONE
 nnoremap <esc> :noh<return><esc>
 
 " Commands
-command! Pdf execute "!md2pdf % %:r.pdf --css=/usr/share/github.css &"
+command! Pdf execute "!md2pdf \"%\" \"%:r.pdf\" --css=/usr/share/github.css"

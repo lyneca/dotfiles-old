@@ -25,7 +25,6 @@ MiscUseShiftArrowsToScroll=FALSE
 MiscSlimTabs=TRUE
 FontName=RobotoMono Nerd Font 10
 BackgroundDarkness=0.840000
-ScrollingBar=TERMINAL_SCROLLBAR_NONE
 ScrollingUnlimited=TRUE
 ColorBackground=#ffffff
 BackgroundImageShading=0.800000
@@ -33,4 +32,6 @@ ColorForeground=#bababdbdb6b6
 BackgroundImageFile=/home/lyneca/Pictures/sheev.jpg
 ScrollingOnOutput=FALSE
 MiscNewTabAdjacent=FALSE
+MiscShowRelaunchDialog=TRUE
+ScrollingBar=TERMINAL_SCROLLBAR_NONE
 
