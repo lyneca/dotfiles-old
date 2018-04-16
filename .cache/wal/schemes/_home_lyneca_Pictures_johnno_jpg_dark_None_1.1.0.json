@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/lyneca/Pictures/johnno.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1a1a16",
+        "foreground": "#e1e7de",
+        "cursor": "#e1e7de"
+    },
+    "colors": {
+        "color0": "#1a1a16",
+        "color1": "#89795F",
+        "color2": "#96886B",
+        "color3": "#A5926C",
+        "color4": "#CBBE5D",
+        "color5": "#768F85",
+        "color6": "#A7A993",
+        "color7": "#e1e7de",
+        "color8": "#9da19b",
+        "color9": "#89795F",
+        "color10": "#96886B",
+        "color11": "#A5926C",
+        "color12": "#CBBE5D",
+        "color13": "#768F85",
+        "color14": "#A7A993",
+        "color15": "#e1e7de"
+    }
+}

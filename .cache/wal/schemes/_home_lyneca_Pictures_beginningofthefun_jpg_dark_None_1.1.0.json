@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/lyneca/Pictures/beginningofthefun.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#12120e",
+        "foreground": "#e6d2c4",
+        "cursor": "#e6d2c4"
+    },
+    "colors": {
+        "color0": "#12120e",
+        "color1": "#6F4A36",
+        "color2": "#6A594A",
+        "color3": "#8B553F",
+        "color4": "#986450",
+        "color5": "#C18D71",
+        "color6": "#7E7F85",
+        "color7": "#e6d2c4",
+        "color8": "#a19389",
+        "color9": "#6F4A36",
+        "color10": "#6A594A",
+        "color11": "#8B553F",
+        "color12": "#986450",
+        "color13": "#C18D71",
+        "color14": "#7E7F85",
+        "color15": "#e6d2c4"
+    }
+}

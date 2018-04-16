@@ -28,10 +28,14 @@ BackgroundDarkness=0.840000
 ScrollingUnlimited=TRUE
 ColorBackground=#ffffff
 BackgroundImageShading=0.800000
-ColorForeground=#bababdbdb6b6
+ColorForeground=#ffffffffffff
 BackgroundImageFile=/home/lyneca/Pictures/sheev.jpg
 ScrollingOnOutput=FALSE
 MiscNewTabAdjacent=FALSE
 MiscShowRelaunchDialog=TRUE
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
+ColorCursorUseDefault=FALSE
+ColorCursorForeground=#555557575353
+ColorCursor=#7373d2d21616
+ColorPalette=rgb(0,0,0);rgb(170,0,0);rgb(0,170,0);rgb(170,85,0);rgb(0,0,170);rgb(170,0,170);rgb(0,170,170);rgb(170,170,170);rgb(85,85,85);rgb(255,85,85);rgb(85,255,85);rgb(255,255,85);rgb(85,85,255);rgb(255,85,255);rgb(85,255,255);rgb(255,0,0)
 

@@ -14,7 +14,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 " Plugin 'Valloric/YouCompleteMe'
 " Plugin 'scrooloose/nerdtree'
-" Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'cespare/vim-toml'
@@ -33,6 +33,7 @@ Plugin 'notpratheek/vim-luna'
 Plugin 'rust-lang/rust.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-scripts/brainfuck-syntax'
+Plugin 'dylanaraps/wal.vim'
 
 
 call vundle#end()            " required
@@ -42,6 +43,8 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=0
 set expandtab
+
+set fillchars=vert:┃,fold:-
 
 let g:NERDSpaceDelims = 1
 let g:NERDAltDelims_java = 1
@@ -55,7 +58,7 @@ set number
 set backspace=indent,eol,start
 syntax on
 set guifont=InputMono:h10
-colorscheme gruvbox 
+colorscheme wal 
 highlight NonText ctermbg=none guibg=NONE
 
 set background=dark
@@ -63,13 +66,13 @@ set laststatus=2
 set updatetime=750
 set mouse=a
 let g:lightline = {  
- \ 'colorscheme': 'solarized',
+ \ 'colorscheme': 'wal',
  \ }
 
-" let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
-" let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
-" let s:palette.inactive.middle = s:palette.normal.middle
-" let s:palette.tabline.middle = s:palette.normal.middle
+let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
+let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
+let s:palette.inactive.middle = s:palette.normal.middle
+let s:palette.tabline.middle = s:palette.normal.middle
 
 
 " autocmd StdinReadPre * let s:std_in=1
@@ -83,14 +86,20 @@ autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 set autochdir
 
 " Syntastic checking stuff
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
 
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0 
+
+let g:syntastic_mode_map = {
+    \ "mode": "passive" }
+
+nmap <leader>sc :SyntasticCheck<CR>
 
 set noeb novb t_vb=
 

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/lyneca/Pictures/sheev.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0a08",
+        "foreground": "#efddce",
+        "cursor": "#efddce"
+    },
+    "colors": {
+        "color0": "#0d0a08",
+        "color1": "#894C3A",
+        "color2": "#9C664F",
+        "color3": "#B1896B",
+        "color4": "#D1956D",
+        "color5": "#B2A18E",
+        "color6": "#E2B28F",
+        "color7": "#efddce",
+        "color8": "#a79a90",
+        "color9": "#894C3A",
+        "color10": "#9C664F",
+        "color11": "#B1896B",
+        "color12": "#D1956D",
+        "color13": "#B2A18E",
+        "color14": "#E2B28F",
+        "color15": "#efddce"
+    }
+}

@@ -6,8 +6,6 @@
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-exec --no-startup-id wal -ti /usr/share/backgrounds/firewatch_greyscale.jspg -b "#202020"
-
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
@@ -36,6 +34,10 @@ bindsym $mod+Pause exec --no-startup-id systemctl suspend
 bindsym $mod+Mod1+Pause exec --no-startup-id zenity --question --text "Poweroff?" --default-cancel && poweroff
 bindsym $mod+shift+Pause exec --no-startup-id zenity --question --text "Reboot?" --default-cancel && systemctl reboot
 
+# Lock Screen
+bindsym $mod+Delete exec --no-startup-id /usr/bin/blurlock
+
+
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
 
@@ -46,7 +48,7 @@ bindsym $mod+shift+Return exec xfce4-terminal -T floating
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id dmenu_run -i -h 27 -nb black
+# bindsym $mod+d exec --no-startup-id start_dmenu
 # bindsym $mod+d exec --no-startup-id rofi -show run -sidebar-mode -location 2 -yoffset 100 -run-list-command ". ~/bin/list_aliases.sh" -run-command "/bin/bash -i -c '{cmd}'" -rnow
 bindsym $mod+Tab exec --no-startup-id rofi -show window -sidebar-mode -location 2 -yoffset 100 -rnow
 bindsym $mod+s exec --no-startup-id rofi -show ssh -sidebar-mode -location 2 -yoffset 100 -rnow -ssh-command "xfce4-terminal -e 'ssh {host}'"
@@ -143,7 +145,7 @@ bindsym $mod+g exec rofi-surfraw
 bindsym $mod+n exec nautilus
 bindsym $mod+p exec ~/bin/rofi-monitor
 
-# bindsym $mod+F9 exec toggle_conky
+bindsym $mod+F6 exec ~/bin/toggle_saturation
 # bindsym $mod+s layout stacking
 # bindsym $mod+w layout tabbed
 
@@ -276,7 +278,7 @@ bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
 # exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b --respect-prop-shadow --opengl # --blur-background --blur-kern 5x5gaussian
+exec --no-startup-id compton -b --respect-prop-shadow --opengl # --blur-background --blur-kern 5x5gaussian
 exec --no-startup-id pa-applet
 exec --no-startup-id dex -ae i3
 # exec --no-startup-id clipit
@@ -337,20 +339,37 @@ bindsym $mod+m bar mode toggle
 #  }
 #}
 
+# Set colors from Xresources
+# Change 'color7' and 'color2' to whatever colors you want i3 to use 
+# from the generated scheme.
+# NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
+# it fails to get colors from Xresources.
+set_from_resource $fg color7 #f0f0f0
+set_from_resource $bg color2 #f0f0f0
+
+# class                 border  backgr. text indicator child_border
+client.focused          $bg     $bg     $fg  $bg       $bg
+client.focused_inactive $bg     $bg     $fg  $bg       $bg
+client.unfocused        $bg     $bg     $fg  $bg       $bg
+client.urgent           $bg     $bg     $fg  $bg       $bg
+client.placeholder      $bg     $bg     $fg  $bg       $bg
+
+client.background       $bg
+
+bindsym $mod+d exec start_dmenu
 # Theme colors
 # My colors
 # client.background	$background
 
 # class                 border  	backgr. 	text    	indic.  	child_border
-client.focused         	#202020	$background	$foreground	$background	$background	
-client.unfocused       	$background	$background	$foreground	$background	$background
-client.focused_inactive	$background	$background	$foreground	$background	$background
-client.urgent		    $background	$background	$foreground	$background	$background
-client.placeholder	    $background	$background	$foreground	$background	$background
+# client.focused         	#202020	$background	$foreground	$background	$background	
+# client.unfocused       	$background	$background	$foreground	$background	$background
+# client.focused_inactive	$background	$background	$foreground	$background	$background
+# client.urgent		    $background	$background	$foreground	$background	$background
+# client.placeholder	    $background	$background	$foreground	$background	$background
 
 # Pulse Audio Controls
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% # Increase
 #bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% # Decrease
 #bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # Mute
-exec --no-startup-id nitrogen --restore
-exec_always --no-startup-id start_conky
+# exec_always --no-startup-id start_conky
