@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/lyneca/Downloads/adventure-alps-climb-1004119.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#161b1b",
+        "foreground": "#dfdcde",
+        "cursor": "#dfdcde"
+    },
+    "colors": {
+        "color0": "#161b1b",
+        "color1": "#8E9294",
+        "color2": "#9DA0A2",
+        "color3": "#B1B0B4",
+        "color4": "#C3B8BC",
+        "color5": "#BEBCC1",
+        "color6": "#C2BEC3",
+        "color7": "#dfdcde",
+        "color8": "#9c9a9b",
+        "color9": "#8E9294",
+        "color10": "#9DA0A2",
+        "color11": "#B1B0B4",
+        "color12": "#C3B8BC",
+        "color13": "#BEBCC1",
+        "color14": "#C2BEC3",
+        "color15": "#dfdcde"
+    }
+}

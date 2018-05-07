@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/lyneca/Downloads/cc0-desktop-backgrounds-fog-7919.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1e191b",
+        "foreground": "#d2dadc",
+        "cursor": "#d2dadc"
+    },
+    "colors": {
+        "color0": "#1e191b",
+        "color1": "#A493AA",
+        "color2": "#B6A6B9",
+        "color3": "#CCAFB4",
+        "color4": "#F9D9AC",
+        "color5": "#B8B1C9",
+        "color6": "#C7BACA",
+        "color7": "#d2dadc",
+        "color8": "#93989a",
+        "color9": "#A493AA",
+        "color10": "#B6A6B9",
+        "color11": "#CCAFB4",
+        "color12": "#F9D9AC",
+        "color13": "#B8B1C9",
+        "color14": "#C7BACA",
+        "color15": "#d2dadc"
+    }
+}

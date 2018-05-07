@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/lyneca/Downloads/dragon.png",
+    "alpha": "100",
+    "special": {
+        "background": "#1b1416",
+        "foreground": "#e3cac0",
+        "cursor": "#e3cac0"
+    },
+    "colors": {
+        "color0": "#1b1416",
+        "color1": "#624954",
+        "color2": "#A1312B",
+        "color3": "#9E6270",
+        "color4": "#C65B54",
+        "color5": "#C78977",
+        "color6": "#A27687",
+        "color7": "#e3cac0",
+        "color8": "#9e8d86",
+        "color9": "#624954",
+        "color10": "#A1312B",
+        "color11": "#9E6270",
+        "color12": "#C65B54",
+        "color13": "#C78977",
+        "color14": "#A27687",
+        "color15": "#e3cac0"
+    }
+}

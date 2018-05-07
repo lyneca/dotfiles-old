@@ -1,9 +1,9 @@
 * {
-    active-background: #A7554C;
+    active-background: #D86E1B;
     active-foreground: @foreground;
     normal-background: @background;
     normal-foreground: @foreground;
-    urgent-background: #E16F33;
+    urgent-background: #AA4C1A;
     urgent-foreground: @foreground;
 
     alternate-active-background: @background;
@@ -13,16 +13,16 @@
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: #E16F33;
+    selected-active-background: #AA4C1A;
     selected-active-foreground: @foreground;
-    selected-normal-background: #A7554C;
+    selected-normal-background: #D86E1B;
     selected-normal-foreground: @foreground;
-    selected-urgent-background: #F58B33;
+    selected-urgent-background: #F08A1B;
     selected-urgent-foreground: @foreground;
 
     background-color: @background;
-    background: #150a19;
-    foreground: #f5e5cc;
+    background: #170001;
+    foreground: #f6da89;
     border-color: @background;
     spacing: 2;
 }
@@ -128,6 +128,10 @@ textbox-prompt-colon {
 #sidebar {
     border: 2px 0px 0px;
     border-color: @border-color;
+}
+
+#button {
+    text-color: @normal-foreground;
 }
 
 #button.selected {

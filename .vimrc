@@ -16,7 +16,6 @@ Plugin 'tpope/vim-surround'
 " Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'arcticicestudio/nord-vim'
 Plugin 'cespare/vim-toml'
 Plugin 'davidklsn/vim-sialoquent'
 Plugin 'derekmcloughlin/gvimfullscreen_win32'
@@ -33,7 +32,9 @@ Plugin 'notpratheek/vim-luna'
 Plugin 'rust-lang/rust.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-scripts/brainfuck-syntax'
-Plugin 'dylanaraps/wal.vim'
+Plugin 'lyneca/wal.vim'
+Plugin 'junegunn/goyo.vim'
+Plugin 'amix/vim-zenroom2'
 
 
 call vundle#end()            " required
@@ -50,13 +51,16 @@ let g:NERDSpaceDelims = 1
 let g:NERDAltDelims_java = 1
 let g:NERDAltDelims_c = 1
 
+let g:goyo_height = "98%"
+let g:goyo_linenr = 1
+
 autocmd FileType haskell setlocal expandtab
 
 "let g:syntastic_python_python_exec = '/usr/bin/python3'
 " let g:syntastic_java_javac_config_file_enabled=1
+
 set number
 set backspace=indent,eol,start
-syntax on
 set guifont=InputMono:h10
 colorscheme wal 
 highlight NonText ctermbg=none guibg=NONE
@@ -69,10 +73,10 @@ let g:lightline = {
  \ 'colorscheme': 'wal',
  \ }
 
-let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
-let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
-let s:palette.inactive.middle = s:palette.normal.middle
-let s:palette.tabline.middle = s:palette.normal.middle
+" let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
+" let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
+" let s:palette.inactive.middle = s:palette.normal.middle
+" let s:palette.tabline.middle = s:palette.normal.middle
 
 
 " autocmd StdinReadPre * let s:std_in=1
@@ -95,9 +99,14 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0 
+let g:syntastic_c_check_header = 1
+let g:syntastic_cpp_check_header = 1
 
 let g:syntastic_mode_map = {
-    \ "mode": "passive" }
+    \ "mode": "active",
+    \ "passive_filetypes": ["python", "java"] }
+
+set sessionoptions=blank,winsize,tabpages,resize
 
 nmap <leader>sc :SyntasticCheck<CR>
 
@@ -125,8 +134,18 @@ vnoremap <left> <nop>
 vnoremap <right> <nop>
 " B A <Start>
 
-highlight Normal ctermbg=NONE
 nnoremap <esc> :noh<return><esc>
-
 " Commands
 command! Pdf execute "!md2pdf \"%\" \"%:r.pdf\" --css=/usr/share/github.css"
+command! -nargs=1 C execute "tabnew <args>.c | vnew <args>.h | wincmd r | wincmd h"
+
+function Header()
+    if filereadable(expand("%:r") . ".h")
+        execute "vnew %:r.h | wincmd r | wincmd h"
+    endif
+endfunction
+
+" if !exists("autocommands_loaded")
+    " let autocommands_loaded = 1
+    " autocmd FileType c call Header()
+" endif

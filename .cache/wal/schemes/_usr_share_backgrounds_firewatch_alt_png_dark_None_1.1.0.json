@@ -1,7 +1,6 @@
 {
     "wallpaper": "/usr/share/backgrounds/firewatch_alt.png",
     "alpha": "100",
-
     "special": {
         "background": "#170001",
         "foreground": "#f6da89",

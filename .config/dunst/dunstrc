@@ -1,5 +1,5 @@
 [global]
-    font = Monospace 8
+    font = Iosevka Custom 8
 
     stack_duplicates = false
     hide_duplicate_count = false
@@ -145,23 +145,27 @@
     # context menu
     context = mod4+shift+i
 
-# [urgency_low]
-    # # IMPORTANT: colors have to be defined in quotation marks.
-    # # Otherwise the '#' and following  would be interpreted as a comment.
-    # background = "#150a19"
-    # foreground = "#f5e5cc"
-    # timeout = 10
+[urgency_low]
+    # IMPORTANT: colors have to be defined in quotation marks.
+    # Otherwise the '#' and following  would be interpreted as a comment.
+    background = "#170001"
+    foreground = "#F6DA89"
+    timeout = 10
 
-# [urgency_normal]
-    # background = "#A7554C"
-    # foreground = "#f5e5cc"
-    # timeout = 10
+[urgency_normal]
+    background = "#AA4C1A"
+    foreground = "#170001"
+    timeout = 10
 
-# [urgency_critical]
-    # background = "#F58B33"
-    # foreground = "#f5e5cc"
-    # timeout = 0
+[urgency_critical]
+    background = "#F08A1B"
+    foreground = "#170001"
+    timeout = 0
 
+
+    # -lb "$color0" -lf "$color6" \
+    # -nb "$color2" -nf "$color0" \
+    # -cb "$color4" -cf "$color0"
 
 # Every section that isn't one of the above is interpreted as a rules
 # to override settings for certain messages.
