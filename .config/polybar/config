@@ -153,7 +153,7 @@ label-urgent-padding = 2
 [module/ip]
 type = internal/network
 interface = wlp2s0
-format-connected = IP  <label-connected>
+format-connected = IP   <label-connected>
 format-connected-foreground = ${colors.color02}
 label-connected = %local_ip%
 label-connected-foreground = ${colors.color03}
@@ -296,7 +296,7 @@ ramp-signal-3 = 
 ramp-signal-4 = 
 
 animation-packetloss-0 = 
-animation-packetloss-0-foreground = #ffa64c
+animation-packetloss-0-foreground = ${colors.color05}
 animation-packetloss-1 = 
 animation-packetloss-1-foreground = ${bar/top.foreground}
 animation-packetloss-framerate = 500

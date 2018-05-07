@@ -23,7 +23,7 @@ MiscDefaultWorkingDir=
 MiscRewrapOnResize=TRUE
 MiscUseShiftArrowsToScroll=FALSE
 MiscSlimTabs=TRUE
-FontName=RobotoMono Nerd Font 10
+FontName=Iosevka Custom Ligatures 10
 BackgroundDarkness=0.840000
 ScrollingUnlimited=TRUE
 ColorBackground=#ffffff
@@ -38,4 +38,5 @@ ColorCursorUseDefault=FALSE
 ColorCursorForeground=#555557575353
 ColorCursor=#7373d2d21616
 ColorPalette=rgb(0,0,0);rgb(170,0,0);rgb(0,170,0);rgb(170,85,0);rgb(0,0,170);rgb(170,0,170);rgb(0,170,170);rgb(170,170,170);rgb(85,85,85);rgb(255,85,85);rgb(85,255,85);rgb(255,255,85);rgb(85,85,255);rgb(255,85,255);rgb(85,255,255);rgb(255,0,0)
+BindingAmbiguousWidth=TERMINAL_AMBIGUOUS_WIDTH_BINDING_WIDE
 

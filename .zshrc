@@ -13,11 +13,10 @@ export GEOMETRY_PROMPT_PLUGINS=(exec_time virtualenv jobs git hg node rustup)
 
 PROMPT_GEOMETRY_COLORIZE_ROOT=true
 PROMPT_GEOMETRY_EXEC_TIME=true
-GEOMETRY_SYMBOL_PROMPT="⯈"                  # default prompt symbol
-GEOMETRY_SYMBOL_RPROMPT="╶ "                 # multiline prompts
-GEOMETRY_SYMBOL_EXIT_VALUE="⯈"              # displayed when exit value is != 0
-GEOMETRY_SYMBOL_EXIT_VALUE="◆"              # displayed when exit value is != 0
-GEOMETRY_SYMBOL_ROOT="◈"                    # when logged in user is root
+GEOMETRY_SYMBOL_PROMPT=")>"                  # default prompt symbol
+GEOMETRY_SYMBOL_RPROMPT="╶ "                # multiline prompts
+GEOMETRY_SYMBOL_EXIT_VALUE="]>"              # displayed when exit value is != 0
+GEOMETRY_SYMBOL_ROOT="}>"                    # when logged in user is root
 GEOMETRY_PROMPT_PREFIX="\n"
 GEOMETRY_PROMPT_PREFIX_SPACER=""
 GEOMETRY_DIR_SPACER="\n"
@@ -117,3 +116,4 @@ export ANDROID_HOME=/opt/android-sdk
 export MOZ_USE_XINPUT2=1
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 source ~/.profile
+source ~/.alias
