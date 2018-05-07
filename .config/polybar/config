@@ -39,7 +39,7 @@ font-1 = RobotoMono:size=8;1
 font-2 = Termsynu:size=8;1
 
 modules-left = i3
-modules-right = updates-arch-combined volume wireless-network battery date
+modules-right = updates-arch-combined dots volume wireless-network battery date
 
 [bar/bottom]
 ;monitor = eDP-1
@@ -181,6 +181,11 @@ interval = 1
 [module/usb]
 type = custom/script
 exec = sh ~/.config/polybar/usbsize.sh /media/usb U 16000 28000
+interval = 1
+
+[module/dots]
+type = custom/script
+exec = sh ~/.config/polybar/dots.sh
 interval = 1
 
 [module/cpu]
