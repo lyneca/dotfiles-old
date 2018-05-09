@@ -142,7 +142,8 @@ bindsym --release Shift+Print      exec gnome-screenshot -a
 
 bindsym $mod+w exec firefox
 bindsym $mod+shift+w exec firefox --new-window
-bindsym $mod+g exec search
+bindsym $mod+g exec --no-startup-id search
+bindsym $mod+o exec --no-startup-id open_dir
 bindsym $mod+n exec thunar
 bindsym $mod+p exec ~/bin/rofi-monitor
 
