@@ -8,7 +8,7 @@ indent() {
 
 export SURFRAW_browser=google-chrome-stable
 
-export PATH=$PATH:$HOME//bin:$HOME/.gem/ruby/2.4.0/bin:$HOME/.local/bin
+export PATH=$HOME//bin:$HOME/.gem/ruby/2.4.0/bin:$HOME/.local/bin:$PATH
 
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
 
@@ -35,3 +35,4 @@ export POLYBAR_DATE_LABEL="%{F$color2}%date%%{F-}"
 export POLYBAR_TIME_LABEL="%{F$color3}%time%%{F-}"
 
 setxkbmap -option caps:escape
+setxkbmap -option compose:ralt
