@@ -161,32 +161,32 @@ label-connected-foreground = ${colors.color03}
 [module/hdd]
 type = custom/script
 exec = sh ~/.config/polybar/size.sh /dev/mmcblk0p3 H 16000 20000
-interval = 1
+interval = 10
 
 [module/sd]
 type = custom/script
 exec = sh ~/.config/polybar/size.sh /dev/mmcblk1p1 S 10000 14000
-interval = 1
+interval = 10
 
 [module/tmp]
 type = custom/script
 exec = sh ~/.config/polybar/size.sh /tmp T 900 1500
-interval = 1
+interval = 10
 
 [module/cache]
 type = custom/script
 exec = sh ~/.config/polybar/dirsize.sh ~/.cache C 900 1500
-interval = 1
+interval = 10
 
 [module/usb]
 type = custom/script
 exec = sh ~/.config/polybar/usbsize.sh /media/usb U 16000 28000
-interval = 1
+interval = 10
 
 [module/dots]
 type = custom/script
 exec = sh ~/.config/polybar/dots.sh
-interval = 1
+interval = 10
 
 [module/cpu]
 type = internal/cpu
