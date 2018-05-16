@@ -121,6 +121,8 @@ bindkey -v \
     '^[OH' beginning-of-line \
     '^[OF' end-of-line
 
+bindkey -M vicmd 'K' run-help
+
 export ANDROID_HOME=/opt/android-sdk
 export MOZ_USE_XINPUT2=1
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
