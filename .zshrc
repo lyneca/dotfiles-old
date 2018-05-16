@@ -15,7 +15,7 @@ PROMPT_GEOMETRY_COLORIZE_ROOT=true
 PROMPT_GEOMETRY_EXEC_TIME=true
 GEOMETRY_SYMBOL_PROMPT=")>"                  # default prompt symbol
 GEOMETRY_SYMBOL_RPROMPT="╶ "                # multiline prompts
-GEOMETRY_SYMBOL_EXIT_VALUE="]>"              # displayed when exit value is != 0
+GEOMETRY_SYMBOL_EXIT_VALUE=")>"              # displayed when exit value is != 0
 GEOMETRY_SYMBOL_ROOT="}>"                    # when logged in user is root
 GEOMETRY_PROMPT_PREFIX="\n"
 GEOMETRY_PROMPT_PREFIX_SPACER=""
@@ -108,12 +108,22 @@ source $ZSH/oh-my-zsh.sh
 export TERMINAL=xterm
 export MONITOR=eDP-1
 export NO_AT_BRIDGE=1
+# bindkey -v '^?' backward-delete-char '^[OA' up-line-or-beginning-search '^[OB' down-line-or-beginning-search
 export JUNIT_HOME=/usr/local/junit
 export CLASSPATH=$CLASSPATH:$JUNIT_HOME/junit4.10.jar:.
 [ -n "$XTERM_VERSION" ] && transset-df --dec 0.2 --id "$WINDOWID" >/dev/null
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+bindkey -v \
+    '^?' backward-delete-char \
+    '^[OA' up-line-or-beginning-search \
+    '^[OB' down-line-or-beginning-search \
+    '^[OH' beginning-of-line \
+    '^[OF' end-of-line
+
 export ANDROID_HOME=/opt/android-sdk
 export MOZ_USE_XINPUT2=1
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 source ~/.profile
 source ~/.alias
+
