@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/lyneca/Pictures/hobbes/tree.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#19120b",
+        "foreground": "#e9ede9",
+        "cursor": "#e9ede9"
+    },
+    "colors": {
+        "color0": "#19120b",
+        "color1": "#F8EB0E",
+        "color2": "#ECD332",
+        "color3": "#9D9050",
+        "color4": "#F0E352",
+        "color5": "#757CA1",
+        "color6": "#DCD39F",
+        "color7": "#e9ede9",
+        "color8": "#a3a5a3",
+        "color9": "#F8EB0E",
+        "color10": "#ECD332",
+        "color11": "#9D9050",
+        "color12": "#F0E352",
+        "color13": "#757CA1",
+        "color14": "#DCD39F",
+        "color15": "#e9ede9"
+    }
+}

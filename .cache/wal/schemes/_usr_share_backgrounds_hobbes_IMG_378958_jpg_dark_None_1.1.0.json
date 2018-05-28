@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/usr/share/backgrounds/hobbes/IMG_378958.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#150c11",
+        "foreground": "#f2ebe1",
+        "cursor": "#f2ebe1"
+    },
+    "colors": {
+        "color0": "#150c11",
+        "color1": "#65659E",
+        "color2": "#AE9FA0",
+        "color3": "#D0B69A",
+        "color4": "#E2CDB1",
+        "color5": "#D9D0D2",
+        "color6": "#E9D9CA",
+        "color7": "#f2ebe1",
+        "color8": "#a9a49d",
+        "color9": "#65659E",
+        "color10": "#AE9FA0",
+        "color11": "#D0B69A",
+        "color12": "#E2CDB1",
+        "color13": "#D9D0D2",
+        "color14": "#E9D9CA",
+        "color15": "#f2ebe1"
+    }
+}

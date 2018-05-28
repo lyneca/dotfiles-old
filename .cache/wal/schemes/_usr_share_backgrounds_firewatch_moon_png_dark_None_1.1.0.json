@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/usr/share/backgrounds/firewatch_moon.png",
+    "alpha": "100",
+    "special": {
+        "background": "#041F27",
+        "foreground": "#d1dcd1",
+        "cursor": "#d1dcd1"
+    },
+    "colors": {
+        "color0": "#041F27",
+        "color1": "#1D6359",
+        "color2": "#21675D",
+        "color3": "#1F6F61",
+        "color4": "#226F63",
+        "color5": "#51675F",
+        "color6": "#75877A",
+        "color7": "#d1dcd1",
+        "color8": "#929a92",
+        "color9": "#1D6359",
+        "color10": "#21675D",
+        "color11": "#1F6F61",
+        "color12": "#226F63",
+        "color13": "#51675F",
+        "color14": "#75877A",
+        "color15": "#d1dcd1"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/usr/share/backgrounds/firewatch_clouds.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0f293c",
+        "foreground": "#e6e7e4",
+        "cursor": "#e6e7e4"
+    },
+    "colors": {
+        "color0": "#0f293c",
+        "color1": "#6496B7",
+        "color2": "#75A4C9",
+        "color3": "#FFDCBA",
+        "color4": "#8CB8DF",
+        "color5": "#9CC5E7",
+        "color6": "#ABCEEB",
+        "color7": "#e6e7e4",
+        "color8": "#a1a19f",
+        "color9": "#6496B7",
+        "color10": "#75A4C9",
+        "color11": "#FFDCBA",
+        "color12": "#8CB8DF",
+        "color13": "#9CC5E7",
+        "color14": "#ABCEEB",
+        "color15": "#e6e7e4"
+    }
+}

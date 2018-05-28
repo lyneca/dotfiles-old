@@ -14,22 +14,25 @@ export PATH=$HOME//bin:$HOME/.gem/ruby/2.4.0/bin:$HOME/.local/bin:$PATH
 
 . ~/.cache/wal/colors.sh
 
-export color0='#150a19'
-export color1='#E16F33'
-export color2='#A7554C'
-export color3='#F58B33'
-export color4='#FEA533'
-export color5='#F0A362'
-export color6='#FFD7A5'
-export color7='#f5e5cc'
-export color8='#aba08e'
-export color9='#E16F33'
-export color10='#A7554C'
-export color11='#F58B33'
-export color12='#FEA533'
-export color13='#F0A362'
-export color14='#FFD7A5'
-export color15='#f5e5cc'
+export background
+export foreground
+
+export color0
+export color1
+export color2
+export color3
+export color4
+export color5
+export color6
+export color7
+export color8
+export color9
+export color10
+export color11
+export color12
+export color13
+export color14
+export color15
 
 export POLYBAR_DATE_LABEL="%{F$color2}%date%%{F-}"
 export POLYBAR_TIME_LABEL="%{F$color3}%time%%{F-}"

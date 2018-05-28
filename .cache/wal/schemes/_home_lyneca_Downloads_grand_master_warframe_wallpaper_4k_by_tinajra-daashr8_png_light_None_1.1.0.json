@@ -1,28 +1,27 @@
 {
     "wallpaper": "/home/lyneca/Downloads/grand_master_warframe_wallpaper_4k_by_tinajra-daashr8.png",
     "alpha": "100",
-
     "special": {
-        "background": "#0e0e0f",
-        "foreground": "#e7decc",
-        "cursor": "#e7decc"
+        "background": "#faf9f7",
+        "foreground": "#131314",
+        "cursor": "#131314"
     },
     "colors": {
-        "color0": "#0e0e0f",
+        "color0": "#faf9f7",
         "color1": "#887863",
         "color2": "#7F807F",
         "color3": "#9C8B72",
         "color4": "#D1AF72",
         "color5": "#A19D97",
         "color6": "#CAB89B",
-        "color7": "#e7decc",
-        "color8": "#a19b8e",
+        "color7": "#131314",
+        "color8": "#87837c",
         "color9": "#887863",
         "color10": "#7F807F",
         "color11": "#9C8B72",
         "color12": "#D1AF72",
         "color13": "#A19D97",
         "color14": "#CAB89B",
-        "color15": "#e7decc"
+        "color15": "#131314"
     }
 }

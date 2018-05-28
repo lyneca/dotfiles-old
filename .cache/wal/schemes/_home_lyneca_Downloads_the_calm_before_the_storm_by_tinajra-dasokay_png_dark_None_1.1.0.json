@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/lyneca/Downloads/the_calm_before_the_storm_by_tinajra-dasokay.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0906",
+        "foreground": "#dfcdbe",
+        "cursor": "#dfcdbe"
+    },
+    "colors": {
+        "color0": "#0c0906",
+        "color1": "#8F7056",
+        "color2": "#9E7D60",
+        "color3": "#AA825F",
+        "color4": "#AF8C6D",
+        "color5": "#C59D7B",
+        "color6": "#727D8B",
+        "color7": "#dfcdbe",
+        "color8": "#9c8f85",
+        "color9": "#8F7056",
+        "color10": "#9E7D60",
+        "color11": "#AA825F",
+        "color12": "#AF8C6D",
+        "color13": "#C59D7B",
+        "color14": "#727D8B",
+        "color15": "#dfcdbe"
+    }
+}

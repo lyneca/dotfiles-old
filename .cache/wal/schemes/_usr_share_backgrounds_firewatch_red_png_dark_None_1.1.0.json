@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/usr/share/backgrounds/firewatch_red.png",
+    "alpha": "100",
+    "special": {
+        "background": "#270f22",
+        "foreground": "#f6e3d8",
+        "cursor": "#f6e3d8"
+    },
+    "colors": {
+        "color0": "#270f22",
+        "color1": "#EA5540",
+        "color2": "#FF6F42",
+        "color3": "#FE8E62",
+        "color4": "#FAB294",
+        "color5": "#DFC5BC",
+        "color6": "#FFCDB3",
+        "color7": "#f6e3d8",
+        "color8": "#ac9e97",
+        "color9": "#EA5540",
+        "color10": "#FF6F42",
+        "color11": "#FE8E62",
+        "color12": "#FAB294",
+        "color13": "#DFC5BC",
+        "color14": "#FFCDB3",
+        "color15": "#f6e3d8"
+    }
+}

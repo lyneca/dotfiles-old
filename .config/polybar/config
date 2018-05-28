@@ -35,7 +35,7 @@ padding-right = 5
 module-margin = 4
 
 font-0 = FontAwesome:size=10;0
-font-1 = RobotoMono:size=8;1
+font-1 = RobotoMono:size=8:antialias=true;1
 font-2 = Termsynu:size=8;1
 
 modules-left = i3
@@ -60,13 +60,12 @@ padding-left = 4
 module-margin-left = 2
 module-margin-right = 2
 
-font-0 = RobotoMono:size=8;3
-font-1 = unifont:size=6;2
-font-2 = FontAwesome:size=10;10
-font-4 = Termsynu:size=8:antialias=false;0
+font-0 = RobotoMono:size=8:antialias=false;3
+font-1 = FontAwesome:size=10;2
+font-2 = Termsynu:size=8:antialias=false;3
 
-modules-left = hdd sd tmp cache usb cmus
-modules-right = ip cpu memory
+modules-left = hdd sd tmp cache usb
+modules-right = cmus ip cpu memory
 
 wm-restack = i3
 
@@ -186,6 +185,7 @@ interval = 10
 [module/dots]
 type = custom/script
 exec = sh ~/.config/polybar/dots.sh
+format = %{A:run_term echo hello:}<label>%{A}
 interval = 10
 
 [module/cpu]
@@ -247,39 +247,33 @@ bar-used-empty-font = 6
 bar-used-empty-foreground = #444444
 
 [module/cmus]
-type = custom/script
+type = internal/mpd
+padding-left = 5
+format-online = <label-song> <bar-progress>
+; format-online = <icon-prev> <icon-stop> <toggle> <icon-next> <icon-repeat> <icon-random> <bar-progress> <label-time> <label-song>
 
-exec = sh ~/.config/polybar/cmus.sh
-exec-if = pgrep -x cmus
-interval = 1
+icon-play = 
+icon-pause = 
+icon-stop = 
+icon-prev = 
+icon-next = 
+icon-random = 
+icon-repeat = 
 
-click-left = cmus-remote --pause
-click-right = cmus-remote --stop
-; type = internal/mpd
-; format-online = <icon-prev> <icon-stop> <toggle> <icon-next>  <icon-repeat> <icon-random>  <bar-progress> <label-time>  <label-song>
+toggle-on-foreground =
+toggle-off-foreground = #55
 
-; icon-play = 
-; icon-pause = 
-; icon-stop = 
-; icon-prev = 
-; icon-next = 
-; icon-random = 
-; icon-repeat = 
-
-; toggle-on-foreground =
-; toggle-off-foreground = #55
-
-; bar-progress-width = 45
-; bar-progress-format = %{A4:mpdseek+2: A5:mpdseek-2:}%fill%%indicator%%empty%%{A A}
-; bar-progress-indicator = |
-; bar-progress-indicator-foreground = #ff
-; bar-progress-indicator-font = 3
-; bar-progress-fill = ─
-; bar-progress-fill-foreground = #bb
-; bar-progress-fill-font = 3
-; bar-progress-empty = ─
-; bar-progress-empty-font = 3
-; bar-progress-empty-foreground = #44
+bar-progress-width = 25
+bar-progress-format = %{A4:mpdseek+2: A5:mpdseek-2:}%fill%%indicator%%empty%%{A A}
+bar-progress-indicator = |
+bar-progress-indicator-foreground = #ff
+bar-progress-indicator-font = 3
+bar-progress-fill = ─
+bar-progress-fill-foreground = #bb
+bar-progress-fill-font = 3
+bar-progress-empty = ─
+bar-progress-empty-font = 3
+bar-progress-empty-foreground = #44
 
 [module/wireless-network]
 type = internal/network
@@ -364,6 +358,7 @@ menu-2-1-foreground = #fba922
 menu-2-1-exec = menu_open-0
 
 [module/updates-arch-combined]
+format = %{A:termite --title=floating -e 'zsh -c "cat ~/.cache/wal/sequences && sudo pacman -Syu && zsh"' &:}<label>%{A}
 format-foreground = ${colors.color05}
 type = custom/script
 exec = sh  ~/.config/polybar/updates-arch-combined.sh
