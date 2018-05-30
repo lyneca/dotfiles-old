@@ -62,7 +62,10 @@ bindsym XF86WLAN exec --no-startup-id networkmanager_dmenu
 
 bindsym $mod+d exec --no-startup-id rofi -show run -sidebar-mode -bw 2 -location 2 -yoffset 100 -run-list-command ". ~/bin/list_aliases.sh" -run-command "/bin/bash -i -c '{cmd}'" -rnow -disable-history
 # launch categorized menu
-bindsym $mod+z exec --no-startup-id morc_menu
+bindsym $mod+z exec --no-startup-id mpc prev
+bindsym $mod+x exec --no-startup-id mpc stop
+bindsym $mod+c exec --no-startup-id mpc toggle
+bindsym $mod+v exec --no-startup-id mpc next
 
 ################################################################################################
 
@@ -171,7 +174,7 @@ set $ws7 "7:"
 set $ws8 "8:"
 
 # toggle randr output
-bindsym $mod+x move workspace to output right
+bindsym $mod+semicolon move workspace to output right
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
