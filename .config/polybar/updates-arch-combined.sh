@@ -1,6 +1,12 @@
 #!/bin/sh
 
-updates_arch=$(checkupdates | wc -l)
+updates=$(checkupdates 2>&1)
+if [ $(expr match "$updates" "==>") -eq 3 ]; then
+    echo
+    exit
+fi
+
+updates_arch=$(echo "$updates" | wc -l)
 
 # if ! updates_aur=$(cower -u 2> /dev/null | wc -l); then
 if ! updates_aur=$(trizen -Su --aur --quiet | wc -l); then

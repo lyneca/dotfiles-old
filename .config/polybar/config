@@ -362,6 +362,6 @@ format = %{A:termite --title=floating -e 'zsh -c "cat ~/.cache/wal/sequences && 
 format-foreground = ${colors.color05}
 type = custom/script
 exec = sh  ~/.config/polybar/updates-arch-combined.sh
-interval = 600
+interval = 60
 
 ; vim:ft=dosini
