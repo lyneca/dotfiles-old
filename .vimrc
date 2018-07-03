@@ -35,6 +35,8 @@ Plugin 'vim-scripts/brainfuck-syntax'
 Plugin 'lyneca/wal.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'amix/vim-zenroom2'
+Plugin 'sakhnik/nvim-gdb'
+Plugin 'yggdroot/indentline'
 
 
 call vundle#end()            " required
@@ -64,6 +66,9 @@ set backspace=indent,eol,start
 set guifont=InputMono:h10
 colorscheme wal 
 highlight NonText ctermbg=none guibg=NONE
+
+let g:indentLine_char='|'
+let g:indentLine_color_term=235
 
 set background=dark
 set laststatus=2

@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/lyneca/Downloads/grand_master_warframe_wallpaper_4k_by_tinajra-daashr8.png"
+let background = "#0e0e0f"
+let foreground = "#e7decc"
+let cursor     = "#e7decc"
+
+" Colors
+let color0  = "#0e0e0f"
+let color1  = "#887863"
+let color2  = "#7F807F"
+let color3  = "#9C8B72"
+let color4  = "#D1AF72"
+let color5  = "#A19D97"
+let color6  = "#CAB89B"
+let color7  = "#e7decc"
+let color8  = "#a19b8e"
+let color9  = "#887863"
+let color10 = "#7F807F"
+let color11 = "#9C8B72"
+let color12 = "#D1AF72"
+let color13 = "#A19D97"
+let color14 = "#CAB89B"
+let color15 = "#e7decc"

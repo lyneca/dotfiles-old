@@ -1,16 +1,18 @@
 #!/bin/sh
 
-updates=$(checkupdates 2>&1)
-if [ $(expr match "$updates" "==>") -eq 3 ]; then
-    echo
-    exit
+updates_arch=$(checkupdates 2>/dev/null)
+if [ "$updates_arch" == "" ]; then
+    updates_arch=0
+else
+    updates_arch=$(echo "$updates_arch" | wc -l)
 fi
 
-updates_arch=$(echo "$updates" | wc -l)
-
 # if ! updates_aur=$(cower -u 2> /dev/null | wc -l); then
-if ! updates_aur=$(trizen -Su --aur --quiet | wc -l); then
+updates_aur=$(trizen --nocolors -Su --aur --quiet 2>/dev/null)
+if [ "$updates_aur" == "" ]; then
     updates_aur=0
+else
+    updates_aur=$(echo "$updates_aur" | wc -l)
 fi
 
 updates=$(("$updates_arch" + "$updates_aur"))

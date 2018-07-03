@@ -51,8 +51,8 @@ bar_spacing = 1
 ; method = pulse
 ; source = auto
 
-method = alsa
-source = hw:0
+; method = alsa
+; source = hw:0
 
 ; method = fifo
 ; source = /tmp/mpd.fifo

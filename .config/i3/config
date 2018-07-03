@@ -47,8 +47,8 @@ bindsym $mod+Delete exec --no-startup-id betterlockscreen -l
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
-bindsym $mod+shift+Return exec termite --title floating
+bindsym $mod+Return exec kitty
+bindsym $mod+shift+Return exec kitty --title floating
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -214,8 +214,8 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 for_window [instance="rofi"] border none 
 for_window [instance="surf"] border pixel 2
 for_window [class="Thunar"] border none 
-for_window [instance="termite"] border pixel 2 
-for_window [instance="termite" title="floating"] move scratchpad, border pixel 2, resize set 600 px 400 px, scratchpad show
+for_window [instance="kitty"] border pixel 2 
+for_window [instance="kitty" title="floating"] move scratchpad, border pixel 2, resize set 600 px 400 px, scratchpad show
 for_window [title="alsamixer"] floating enable border pixel 1
 # for_window [title="GitKraken"] floating enable 
 for_window [class="GParted"] floating enable border normal
@@ -283,9 +283,6 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-
-# Lock screen
-bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
 # exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
