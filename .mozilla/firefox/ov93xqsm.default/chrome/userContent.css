@@ -1,0 +1,7 @@
+@import url('file:///home/lyneca/.cache/wal/colors.css');
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+html, html * {
+    background-color: #0e0e0f !important;
+    color: #D1AF72 !important;
+}
+
