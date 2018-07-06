@@ -8,15 +8,13 @@ antigen theme "lyneca/geometry"
 
 # antigen bundle zsh-users/zsh-history-substring-search
 
-antigen bundle <<EOBUNDLES
-    git
-    zsh-users/zsh-syntax-highlighting
-    zsh-users/zsh-autosuggestions
-    zsh-users/zsh-completions
-    heroku
-    pip
-    command-not-found
-EOBUNDLES
+antigen bundle git
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+antigen bundle heroku
+antigen bundle pip
+antigen bundle command-not-found
 
 # Geometry Config
 export GEOMETRY_PROMPT_PLUGINS=(exec_time virtualenv jobs git hg node rustup)
