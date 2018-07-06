@@ -6,7 +6,7 @@
 }
 
 /* Adjust Colors */
-.tab-background:not([selected=true]),
+.tab-background:not([selected="true"]),
 .tab-background[selected="true"],
 #titlebar-buttonbox,
 #TabsToolbar,
@@ -16,6 +16,7 @@
     background: var(--background) !important;
     color: var(--color4) !important;
 }
+.tab-background {border-top: none !important};
 #PanelUI-menu-button {
     margin-right: 6px !important;
     padding-left: 2px !important;
@@ -35,6 +36,47 @@
 
 .toolbarbutton-1 {
     fill: var(--color4) !important;
+}
+#PopupAutoCompleteRichResult {
+    background: var(--background) !important;
+    color: var(--color4) !important;
+    border: none !important;
+}
+.search-panel-header,
+.search-panel-one-offs {
+    display: none;
+}
+
+.search-panel-header,
+.search-panel-one-offs,
+.autocomplete-richlistitem {
+    background-color: var(--background) !important;
+    color: var(--color4) !important;
+    border-radius: 0 !important;
+}
+.search-panel-input-value {
+    color: var(--color1) !important;
+}
+
+.autocomplete-richlistitem[selected=true] {
+    background-color: var(--background) !important;
+    filter: brightness(150%);
+}
+
+.ac-action[actiontype=remotetab] {
+    color: var(--color2) !important;
+}
+
+.ac-type-icon {
+    
+}
+
+.ac-site-icon {
+    display: none !important;
+}
+
+.ac-url {
+    color: var(--color1) !important;
 }
 
 /* No Black Line */
