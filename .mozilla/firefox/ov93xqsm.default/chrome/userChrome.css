@@ -1,8 +1,18 @@
 @import url('file:///home/lyneca/.cache/wal/colors.css');
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+#urlbar ::-moz-selection,
+#navigator-toolbox .searchbar-textbox ::-moz-selection,
+.browserContainer > findbar ::-moz-selection {
+    background-color: var(--color2) !important;
+}
+
 #navigator-toolbox[fullscreenShouldAnimate] {
     transition: none !important;
+}
+
+#identity-box {
+    border: 0 !important;
 }
 
 /* Adjust Colors */
@@ -16,6 +26,7 @@
     background: var(--background) !important;
     color: var(--color4) !important;
 }
+
 .tab-background {border-top: none !important};
 #PanelUI-menu-button {
     margin-right: 6px !important;
@@ -124,7 +135,7 @@ label[pinned="true"] {
 .tab-close-button.tab-close-button,
 #page-action-buttons,
 #identity-box {
-    display: none;
+    
 }
 #urlbar .urlbar-input-box {
     text-align: left;
@@ -182,6 +193,19 @@ transition: all 0.3s ease 0s !important;
 
 .tabbrowser-tab[fadein]:not([pinned]) {
   max-width: none !important;
+}
+
+#pageActionSeparator,
+.arrowscrollbox-overflow-end-indicator {
+    display: none;
+}
+
+#downloads-button[attention="success"] > #downloads-indicator-anchor > #downloads-indicator-icon, #downloads-button[attention="success"] > #downloads-indicator-anchor > #downloads-indicator-progress-outer {
+    fill: var(--color6) !important;
+}
+
+#downloads-indicator-progress-inner {
+    fill: var(--color6) !important;
 }
 
 /* Client Side Decorations */

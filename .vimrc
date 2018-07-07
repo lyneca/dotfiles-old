@@ -37,6 +37,7 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'amix/vim-zenroom2'
 Plugin 'sakhnik/nvim-gdb'
 Plugin 'yggdroot/indentline'
+Plugin 'godlygeek/tabular'
 
 
 call vundle#end()            " required
