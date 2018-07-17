@@ -5,3 +5,4 @@
 	alias = --list
 [core]
 	editor = vim
+	hooksPath = /home/lyneca/.config/git/hooks

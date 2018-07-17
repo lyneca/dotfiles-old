@@ -1,0 +1,4 @@
+#!/bin/bash
+echo ":: Does this message look okay? (3s)"
+head -n 1 $1
+sleep 3

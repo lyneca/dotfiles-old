@@ -365,7 +365,7 @@ client.urgent           $bg     $bg     $bg  $bg       $bg
 client.placeholder      $bg     $bg     $bg  $bg       $bg
 client.background       $bg     $bg     $bg  $bg       $bg
 
-bindsym $mod+space exec start_dmenu
+bindsym $mod+space exec mmenu
 # Theme colors
 # My colors
 # client.background	$background
