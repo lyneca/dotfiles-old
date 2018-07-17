@@ -1,7 +1,6 @@
 {
     "wallpaper": "/usr/share/backgrounds/warframe.png",
     "alpha": "100",
-
     "special": {
         "background": "#0b0b0c",
         "foreground": "#bfbebd",

@@ -24,7 +24,7 @@
 #urlbar,
 #nav-bar {
     background: var(--background) !important;
-    color: var(--color4) !important;
+    color: var(--color6) !important;
 }
 
 .tab-background {border-top: none !important};
@@ -46,11 +46,11 @@
 }
 
 .toolbarbutton-1 {
-    fill: var(--color4) !important;
+    fill: var(--color6) !important;
 }
 #PopupAutoCompleteRichResult {
     background: var(--background) !important;
-    color: var(--color4) !important;
+    color: var(--color6) !important;
     border: none !important;
 }
 .search-panel-header,
@@ -62,7 +62,7 @@
 .search-panel-one-offs,
 .autocomplete-richlistitem {
     background-color: var(--background) !important;
-    color: var(--color4) !important;
+    color: var(--color6) !important;
     border-radius: 0 !important;
 }
 .search-panel-input-value {
@@ -113,7 +113,7 @@
 }
 
 .tab-text[selected] {
-    color: var(--color4);
+    color: var(--color6);
 }
 
 label[pinned="true"] {
@@ -175,7 +175,7 @@ transition: all 0.3s ease 0s !important;
 .tab-line {
     -moz-box-ordinal-group: 2;
     min-height: 3px;
-    background-color: var(--color4) !important;
+    background-color: var(--color6) !important;
 }
 
 /* Tabs don't move when dragging. */

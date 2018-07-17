@@ -124,27 +124,27 @@ strip-wsnumbers = true
 pin-workspaces = true
 
 ;label-unfocused-background = ${colors.background}
-label-unfocused-foreground = ${colors.color06}
+label-unfocused-foreground = ${colors.color04}
 
 label-mode = %name%
 label-mode-padding = 2
-label-mode-background = ${colors.color04}
+label-mode-background = ${colors.color06}
 
 label-focused = %name%
-label-focused-foreground = ${colors.color04}
+label-focused-foreground = ${colors.color06}
 label-focused-background = ${colors.background}
-label-focused-underline = ${colors.color04}
+label-focused-underline = ${colors.color06}
 label-focused-padding = 2
 
 label-unfocused = %name%
 label-unfocused-padding = 2
 
 label-visible = %name%
-label-visible-underline = ${colors.color04}
+label-visible-underline = ${colors.color06}
 label-visible-padding = 2
 
 label-urgent = %index%
-label-urgent-foreground = ${colors.color04}
+label-urgent-foreground = ${colors.color06}
 label-urgent-background = ${colors.background}
 label-urgent-underline = ${colors.color02}
 label-urgent-padding = 2
