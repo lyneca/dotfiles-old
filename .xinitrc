@@ -40,4 +40,4 @@ fi
 
 udiskie &
 sleep 3
-exec i3
+exec i3 

@@ -9,3 +9,7 @@ alias vim=nvim
 alias big='du -ad 1 2>/dev/null | sort -k 1n '
 alias mutt='neomutt'
 alias s="vim -S session.vim"
+alias ls="ls --color"
+alias ll="ls -l"
+alias la="ls -a"
+alias l="ls"
