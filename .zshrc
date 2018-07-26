@@ -20,6 +20,9 @@ antigen bundle command-not-found
 export GEOMETRY_PROMPT_PLUGINS=(exec_time virtualenv jobs git hg node rustup)
 PROMPT_GEOMETRY_COLORIZE_ROOT=true
 PROMPT_GEOMETRY_EXEC_TIME=true
+
+GEOMETRY_COLOR_PROMPT="cyan"
+
 GEOMETRY_SYMBOL_PROMPT=")>"                  # default prompt symbol
 GEOMETRY_SYMBOL_RPROMPT="╶ "                # multiline prompts
 GEOMETRY_SYMBOL_EXIT_VALUE=")>"              # displayed when exit value is != 0
