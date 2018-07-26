@@ -19,9 +19,3 @@ if [ $? -eq 0 ]; then
 fi
 MONITOR=eDP-1 polybar -q top &
 MONITOR=eDP-1 polybar -q bottom &
-  
-killall dunst
-dunst \
-    -lb "$color0" -lf "$color6" \
-    -nb "$color2" -nf "$color0" \
-    -cb "$color4" -cf "$color0"
