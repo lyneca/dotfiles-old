@@ -22,9 +22,22 @@
 #TabsToolbar,
 #PersonalToolbar,
 #urlbar,
-#nav-bar {
-    background: var(--background) !important;
+#nav-bar,
+menuitem,
+menupopup,
+menu {
+    background-color: var(--color0) !important;
+    background: var(--color0) !important;
     color: var(--color6) !important;
+}
+
+menupopup xul:arrowscrollbox {
+    background-color: var(--color0);
+}
+
+
+menuitem {
+    border: none;
 }
 
 .tab-background {border-top: none !important};
