@@ -10,33 +10,30 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-" Plugin 'Valloric/YouCompleteMe'
-" Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'airblade/vim-gitgutter'
+" Languages
 Plugin 'cespare/vim-toml'
-Plugin 'davidklsn/vim-sialoquent'
-Plugin 'derekmcloughlin/gvimfullscreen_win32'
-Plugin 'eagletmt/neco-ghc'
-Plugin 'ervandew/supertab'
-Plugin 'itchyny/lightline.vim'
-Plugin 'JarrodCTaylor/spartan'
-" Plugin 'jiangmiao/auto-pairs'
-Plugin 'kien/ctrlp.vim'
-Plugin 'lyneca/gruvbox' 
-Plugin 'majutsushi/tagbar'
-Plugin 'mattn/emmet-vim'
-Plugin 'notpratheek/vim-luna'
 Plugin 'rust-lang/rust.vim'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'vim-scripts/brainfuck-syntax'
+
+" Appearance
 Plugin 'lyneca/wal.vim'
+Plugin 'itchyny/lightline.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'amix/vim-zenroom2'
-Plugin 'sakhnik/nvim-gdb'
 Plugin 'yggdroot/indentline'
+
+" External Extensions
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'ervandew/supertab'
+Plugin 'kien/ctrlp.vim'
+
+" Linting
+Plugin 'w0rp/ale'
+
+" Helpers
+Plugin 'tpope/vim-surround'
+Plugin 'mattn/emmet-vim'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'godlygeek/tabular'
 
 
@@ -58,9 +55,6 @@ let g:goyo_height = "98%"
 let g:goyo_linenr = 1
 
 autocmd FileType haskell setlocal expandtab
-
-"let g:syntastic_python_python_exec = '/usr/bin/python3'
-" let g:syntastic_java_javac_config_file_enabled=1
 
 set number
 set backspace=indent,eol,start
@@ -101,16 +95,23 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0 
-let g:syntastic_c_check_header = 1
-let g:syntastic_cpp_check_header = 1
+let g:ale_completion_enabled = 0
+" let g:ale_linters = {'rust': ['rls']}
+" let g:ale_sign_column_always = 1
 
-let g:syntastic_mode_map = {
-    \ "mode": "active",
-    \ "passive_filetypes": ["python", "java"] }
+
+" let g:syntastic_python_python_exec = '/usr/bin/python3'
+" let g:syntastic_java_javac_config_file_enabled=1
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 0
+" let g:syntastic_check_on_wq = 0 
+" let g:syntastic_c_check_header = 1
+" let g:syntastic_cpp_check_header = 1
+
+" let g:syntastic_mode_map = {
+    " \ "mode": "active",
+    " \ "passive_filetypes": ["python", "java"] }
 
 set sessionoptions=blank,winsize,tabpages,resize
 
