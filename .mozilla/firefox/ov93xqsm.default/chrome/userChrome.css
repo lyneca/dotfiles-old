@@ -71,6 +71,10 @@ menuitem {
     display: none;
 }
 
+#alltabs-button {
+    display: none;
+}
+
 .search-panel-header,
 .search-panel-one-offs,
 .autocomplete-richlistitem {

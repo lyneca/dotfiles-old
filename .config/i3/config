@@ -177,14 +177,14 @@ set $ws8 "8:"
 bindsym $mod+semicolon move workspace to output right
 
 # switch to workspace
-bindsym $mod+1 workspace $ws1
-bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $ws4
-bindsym $mod+5 workspace $ws5
-bindsym $mod+6 workspace $ws6
-bindsym $mod+7 workspace $ws7
-bindsym $mod+8 workspace $ws8
+bindsym $mod+1 workspace $ws1; exec --no-startup-id $HOME/bin/swoosh
+bindsym $mod+2 workspace $ws2; exec --no-startup-id $HOME/bin/swoosh
+bindsym $mod+3 workspace $ws3; exec --no-startup-id $HOME/bin/swoosh
+bindsym $mod+4 workspace $ws4; exec --no-startup-id $HOME/bin/swoosh
+bindsym $mod+5 workspace $ws5; exec --no-startup-id $HOME/bin/swoosh
+bindsym $mod+6 workspace $ws6; exec --no-startup-id $HOME/bin/swoosh
+bindsym $mod+7 workspace $ws7; exec --no-startup-id $HOME/bin/swoosh
+bindsym $mod+8 workspace $ws8; exec --no-startup-id $HOME/bin/swoosh
 
 # Move focused container to workspace
 bindsym $mod+Ctrl+1 move container to workspace $ws1

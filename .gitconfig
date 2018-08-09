@@ -4,5 +4,5 @@
 [alias]
 	alias = --list
 [core]
-	editor = vim
+	editor = nvim
 	hooksPath = /home/lyneca/.config/git/hooks

@@ -3,6 +3,7 @@ cat ~/.cache/wal/sequences
 
 source $HOME/bin/antigen.zsh
 
+# ZSH is full of bloat, use antigen instead
 antigen bundle oh-my-zsh
 antigen theme "lyneca/geometry"
 
