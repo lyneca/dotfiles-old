@@ -29,6 +29,7 @@ Plugin 'kien/ctrlp.vim'
 
 " Linting
 Plugin 'w0rp/ale'
+Plugin 'maximbaz/lightline-ale'
 
 " Helpers
 Plugin 'tpope/vim-surround'
@@ -70,8 +71,39 @@ set laststatus=2
 set updatetime=750
 set mouse=a
 let g:lightline = {  
- \ 'colorscheme': 'wal',
- \ }
+  \ 'colorscheme': 'wal',
+  \ 'active': {
+  \     'right': [
+  \         [ 'lineinfo' ],
+  \         [ 'percent' ],
+  \         [ 'fileformat', 'fileencoding', 'filetype' ],
+  \     ],
+  \     'left': [
+  \         [ 'mode', 'paste' ],
+  \         [ 'readonly', 'filename', 'modified' ],
+  \         [
+  \             'linter_checking',
+  \             'linter_errors',
+  \             'linter_warnings',
+  \             'linter_ok'
+  \         ],
+  \     ],
+  \ },
+  \ 'component_expand': {
+  \     'linter_checking': 'lightline#ale#checking',
+  \     'linter_warnings': 'lightline#ale#warnings',
+  \     'linter_errors': 'lightline#ale#errors',
+  \     'linter_ok': 'lightline#ale#ok',
+  \ },
+  \ 'component_type': {
+  \     'linter_checking': 'left',
+  \     'linter_warnings': 'warning',
+  \     'linter_errors': 'error',
+  \     'linter_ok': 'left',
+  \ }
+  \ }
+
+let g:lightline#ale#indicator_checking = ""
 
 " let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
 " let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
@@ -98,20 +130,6 @@ set statusline+=%*
 let g:ale_completion_enabled = 0
 " let g:ale_linters = {'rust': ['rls']}
 " let g:ale_sign_column_always = 1
-
-
-" let g:syntastic_python_python_exec = '/usr/bin/python3'
-" let g:syntastic_java_javac_config_file_enabled=1
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 0
-" let g:syntastic_check_on_wq = 0 
-" let g:syntastic_c_check_header = 1
-" let g:syntastic_cpp_check_header = 1
-
-" let g:syntastic_mode_map = {
-    " \ "mode": "active",
-    " \ "passive_filetypes": ["python", "java"] }
 
 set sessionoptions=blank,winsize,tabpages,resize
 
