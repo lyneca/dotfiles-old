@@ -7,8 +7,9 @@ else
     updates_arch=$(echo "$updates_arch" | wc -l)
 fi
 
+
 # if ! updates_aur=$(cower -u 2> /dev/null | wc -l); then
-updates_aur=$(trizen --nocolors -Su --aur --quiet 2>/dev/null)
+updates_aur=$(yay -Pu 2>/dev/null)
 if [ "$updates_aur" == "" ]; then
     updates_aur=0
 else
