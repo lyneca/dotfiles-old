@@ -1,45 +1,47 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+if &compatible
+  set nocompatible
+endif
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" Add the dein installation directory into runtimepath
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+if dein#load_state('~/.cache/dein')
+    call dein#begin('~/.cache/dein')
 
-" Languages
-Plugin 'cespare/vim-toml'
-Plugin 'rust-lang/rust.vim'
+    call dein#add('~/.cache/dein')
+    " Languages
+    call dein#add('cespare/vim-toml')
+    call dein#add('rust-lang/rust.vim')
+    call dein#add('JulesWang/css.vim')
 
-" Appearance
-Plugin 'lyneca/wal.vim'
-Plugin 'itchyny/lightline.vim'
-Plugin 'junegunn/goyo.vim'
-Plugin 'amix/vim-zenroom2'
-Plugin 'yggdroot/indentline'
+    " Appearance
+    call dein#add('lyneca/wal.vim')
+    call dein#add('itchyny/lightline.vim')
+    call dein#add('junegunn/goyo.vim')
+    call dein#add('amix/vim-zenroom2')
+    call dein#add('yggdroot/indentline')
 
-" External Extensions
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'ervandew/supertab'
-Plugin 'kien/ctrlp.vim'
+    " External Extensions
+    call dein#add('tpope/vim-fugitive')
+    call dein#add('airblade/vim-gitgutter')
+    call dein#add('ervandew/supertab')
+    call dein#add('kien/ctrlp.vim')
 
-" Linting
-Plugin 'w0rp/ale'
-Plugin 'maximbaz/lightline-ale'
+    " Linting
+    call dein#add('w0rp/ale')
+    call dein#add('maximbaz/lightline-ale')
 
-" Helpers
-Plugin 'tpope/vim-surround'
-Plugin 'mattn/emmet-vim'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'godlygeek/tabular'
+    " Helpers
+    call dein#add('tpope/vim-surround')
+    call dein#add('mattn/emmet-vim')
+    call dein#add('scrooloose/nerdcommenter')
+    call dein#add('godlygeek/tabular')
+    call dein#end()
+    call dein#save_state()
+endif
 
-
-call vundle#end()            " required
-filetype plugin indent on    " required
+filetype plugin indent on
+syntax enable
 
 set tabstop=4
 set shiftwidth=4
