@@ -1,2 +1,0 @@
-#!/bin/bash
-crapp "file://$PWD/$1"
