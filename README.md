@@ -15,14 +15,14 @@ And then get busy fixing all the inevitable errors...
 ## Used Packages
 - [`i3-gaps`](https://github.com/Airblader/i3) - Tiling window manager
 - [`zsh`](https://zsh.org) - Terminal shell
-- [`oh-my-zsh`](https://ohmyz.sh) - Terminal shell manager
+- [`antigen`]() - Terminal shell manager
 - [`pywal`](https://github.com/dylanaraps/pywal) - Colorscheme generator
 - [`polybar`](https://github.com/jaagr/polybar) - Status bars
 - [`conky`](https://github.com/brndnmtthws/conky) - Rainmeter
 - [`dmenu`](https://tools.suckless.org/dmenu/) - Launcher
-- [`geometry`](https://github.com/geometry-zsh/geometry) - ZSH theme
+- [`geometry`](https://github.com/lyneca/geometry) - ZSH theme (fork)
 - [`dunst`](https://github.com/dunst-project/dunst) - Notifications
-- [`gruvbox`](https://github.com/morhetz/gruvbox) - Vim theme
+- [`wal.vim`](https://github.com/lyneca/wal.vim) - Vim theme (fork)
 
 ## Screenshots
 
