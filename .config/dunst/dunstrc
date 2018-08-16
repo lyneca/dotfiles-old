@@ -1,7 +1,7 @@
 [global]
     font = Iosevka Custom 8
 
-    stack_duplicates = false
+    stack_duplicates = true
     hide_duplicate_count = false
 
     # allow a small subset of html markup:
@@ -22,13 +22,13 @@
     #   %I  iconname (without its path)
     #   %p  progress value if set ([  0%] to [100%]) or nothing
     # Markup is allowed
-    format = "<b>%a:</b> %b\n %p"
+    format = "<b>%s</b>\n%b\n %p"
 
     # Sort messages by urgency
     sort = yes
 
     # Show how many messages are currently hidden (because of geometry)
-    indicate_hidden = yes
+    indicate_hidden = no
 
     # alignment of message text.
     # Possible values are "left", "center" and "right"
@@ -149,12 +149,12 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the '#' and following  would be interpreted as a comment.
     background = "#0e0e0f"
-    foreground = "#D1AF72"
+    foreground = "#6B6154"
     timeout = 10
 
 [urgency_normal]
-    background = "#6B6154"
-    foreground = "#0e0e0f"
+    background = "#0e0e0f"
+    foreground = "#D1AF72"
     timeout = 10
 
 [urgency_critical]
@@ -209,14 +209,18 @@
     format = "<b>Volume</b>: %p"
 
 [battery_full]
+    appname = xfce4-power-manager
     icon = battery-full-charged
     format = "Fully charged"
-
+ 
 [battery_empty]
+    appname = xfce4-power-manager
     icon = battery-caution
     format = "Low battery"
 
 [battery_discharging]
+    appname = xfce4-power-manager
     icon = battery-full
     format = "Battery discharging"
+
 # vim: ft=cfg
