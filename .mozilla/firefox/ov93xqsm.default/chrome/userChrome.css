@@ -31,6 +31,19 @@ menu {
     color: var(--color6) !important;
 }
 
+menupopup#contentAreaContextMenu .scrollbox-innerbox {
+    background-color: var(--color0) !important;
+    color: var(--color6) !important;
+    border: 2px solid var(--color1);
+}
+
+menupopup#contentAreaContextMenu .scrollbox-innerbox menuitem {
+    background-color: var(--color6) !important;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
 menupopup xul:arrowscrollbox {
     background-color: var(--color0);
 }
@@ -122,6 +135,10 @@ menuitem {
     border: none !important;
     box-shadow: none !important;
     min-height: 30px !important;
+}
+
+#context-savepage {
+    background-color: var(--background);
 }
 
 /* Adjust Pinned Tab Width */
