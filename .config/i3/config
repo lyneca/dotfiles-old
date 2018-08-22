@@ -160,18 +160,14 @@ bindsym $mod+F6 exec ~/bin/toggle_saturation
 # bindsym $mod+w layout tabbed
 
 # Workspace names
-# to display names or symbols instead of plain workspace numbers you can use
-# something like: set $ws1 1:mail
-#                 set $ws2 2:
-
-set $ws1 "1:"
-set $ws2 "2:"
-set $ws3 "3:"
-set $ws4 "4:"
-set $ws5 "5:"
-set $ws6 "6:"
-set $ws7 "7:"
-set $ws8 "8:"
+set $ws1 "1:𐭇"  # HETH
+set $ws2 "2:𐭕"  # TAW
+set $ws3 "3:𐭅"  # WAW
+set $ws4 "4:𐭈"  # TETH
+set $ws5 "5:𐭃"  # DALETH
+set $ws6 "6:𐭐"  # PE
+set $ws7 "7:𐭒"  # QOPH
+set $ws8 "8:𐭌"  # MEM
 
 # toggle randr output
 bindsym $mod+semicolon move workspace to output right
