@@ -6,10 +6,9 @@ alias please='sudo '
 alias venv="python3 -m venv "
 alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vim=nvim
-alias big='du -ad 1 2>/dev/null | sort -k 1n '
 alias mutt='neomutt'
-alias s="vim -S session.vim"
 alias ls="ls --color"
 alias ll="ls -l"
 alias la="ls -a"
 alias l="ls"
+alias git="hub"
