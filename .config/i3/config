@@ -160,14 +160,22 @@ bindsym $mod+F6 exec ~/bin/toggle_saturation
 # bindsym $mod+w layout tabbed
 
 # Workspace names
-set $ws1 "1:𐭇"  # HETH
-set $ws2 "2:𐭕"  # TAW
-set $ws3 "3:𐭅"  # WAW
-set $ws4 "4:𐭈"  # TETH
-set $ws5 "5:𐭃"  # DALETH
-set $ws6 "6:𐭐"  # PE
-set $ws7 "7:𐭒"  # QOPH
-set $ws8 "8:𐭌"  # MEM
+# HETH
+set $ws1 "1:𐭇"
+# TAW
+set $ws2 "2:𐭕"
+# WAW
+set $ws3 "3:𐭅"
+# TETH
+set $ws4 "4:𐭈"
+# DALETH
+set $ws5 "5:𐭃"
+# PE
+set $ws6 "6:𐭐"
+# QOPH
+set $ws7 "7:𐭒"
+# MEM
+set $ws8 "8:𐭌"
 
 # toggle randr output
 bindsym $mod+semicolon move workspace to output right
