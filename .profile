@@ -8,7 +8,7 @@ indent() {
 
 export SURFRAW_browser=google-chrome-stable
 
-export PATH=$HOME//bin:$HOME/.gem/ruby/2.4.0/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME//bin:$HOME/.gem/ruby/2.5.0/bin:$HOME/.local/bin:$PATH
 
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
 
