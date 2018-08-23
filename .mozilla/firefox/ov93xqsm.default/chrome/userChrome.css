@@ -71,6 +71,10 @@ menuitem {
     border: none !important;
 }
 
+.tab-throbber, .tab-throbber-fallback {
+    color: var(--color6) !important;
+}
+
 .toolbarbutton-1 {
     fill: var(--color6) !important;
 }
