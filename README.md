@@ -26,18 +26,12 @@ And then get busy fixing all the inevitable errors...
 
 ## Screenshots
 
-![Firewatch Back](firewatch_back.png)
-![Firewatch Term](firewatch_term.png)
-![Flowers Back](flowers_back.png)
-![Flowers Term](flowers_term.png)
-![Purple Back](purple_back.png)
-![Purple Term](purple_term.png)
-![Road Back](road_back.png)
-![Road Term](road_term.png)
-![Sandstone Back](sandstone_back.png)
-![Sandstone Term](sandstone_term.png)
-![Wood Back](wood_back.png)
-![Wood Term](wood_term.png)
+![Clean](wallpaper.png)
+![Busy](busy.png)
+![Fake Busy](fakebusy.png)
+![Firefox](firefox.png)
+![Floating Neofetch](neofetch_floating.png)
+![Thunar](thunar.png)
 
 ## Credits
 - Polybar theme based off [jaagr's Space theme](https://github.com/jaagr/dots/tree/master/.local/etc/themer/themes/space)
