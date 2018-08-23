@@ -26,12 +26,12 @@ And then get busy fixing all the inevitable errors...
 
 ## Screenshots
 
-![Clean](wallpaper.png)
-![Busy](busy.png)
-![Fake Busy](fakebusy.png)
-![Firefox](firefox.png)
-![Floating Neofetch](neofetch_floating.png)
-![Thunar](thunar.png)
+![Clean](.screenshots/wallpaper.png)
+![Busy](.screenshots/busy.png)
+![Fake Busy](.screenshots/fakebusy.png)
+![Firefox](.screenshots/firefox.png)
+![Floating Neofetch](.screenshots/neofetch_floating.png)
+![Thunar](.screenshots/thunar.png)
 
 ## Credits
 - Polybar theme based off [jaagr's Space theme](https://github.com/jaagr/dots/tree/master/.local/etc/themer/themes/space)
