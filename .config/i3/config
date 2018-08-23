@@ -168,14 +168,16 @@ set $ws2 "2:𐭕"
 set $ws3 "3:𐭅"
 # TETH
 set $ws4 "4:𐭈"
-# DALETH
-set $ws5 "5:𐭃"
+# SHIN
+set $ws5 "5:𐭔"
 # PE
 set $ws6 "6:𐭐"
+# ONE THOUSAND
+set $ws7 "7:𐭟"
 # QOPH
-set $ws7 "7:𐭒"
-# MEM
-set $ws8 "8:𐭌"
+set $ws8 "8:𐭒"
+
+# 𐭇 𐭒 𐭟 𐭐 𐭔 𐭈 𐭅 𐭕
 
 # toggle randr output
 bindsym $mod+semicolon move workspace to output right
