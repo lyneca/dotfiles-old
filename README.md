@@ -14,15 +14,17 @@ And then get busy fixing all the inevitable errors...
 
 ## Used Packages
 - [`i3-gaps`](https://github.com/Airblader/i3) - Tiling window manager
-- [`zsh`](https://zsh.org) - Terminal shell
-- [`antigen`]() - Terminal shell manager
+- [`zsh`](https://zsh.org) with [`antigen`](https://github.com/zsh-users/antigen) - Terminal shell
 - [`pywal`](https://github.com/dylanaraps/pywal) - Colorscheme generator
 - [`polybar`](https://github.com/jaagr/polybar) - Status bars
-- [`conky`](https://github.com/brndnmtthws/conky) - Rainmeter
 - [`dmenu`](https://tools.suckless.org/dmenu/) - Launcher
 - [`geometry`](https://github.com/lyneca/geometry) - ZSH theme (fork)
 - [`dunst`](https://github.com/dunst-project/dunst) - Notifications
+- [`neovim`](https://neovim.io/) - Text Editor
+- [`dein.vim`](https://github.com/Shougo/dein.vim) - Vim Plugin Manager
 - [`wal.vim`](https://github.com/lyneca/wal.vim) - Vim theme (fork)
+- [`Thunar`](https://github.com/xfce-mirror/thunar) - Graphical FM when needed
+- [`Firefox`](https://www.mozilla.org/en-US/firefox/) - Browser
 
 ## Screenshots
 
@@ -35,5 +37,8 @@ And then get busy fixing all the inevitable errors...
 
 ## Credits
 - Polybar theme based off [jaagr's Space theme](https://github.com/jaagr/dots/tree/master/.local/etc/themer/themes/space)
-- Firewatch wallpaper by /u/Ryan3395 ([source](https://redd.it/6dvpxc)), based off a wallpaper from the excellent game [Firewatch](http://www.firewatchgame.com/)
+- Wallpaper by Tinajra ([DeviantArt link](https://www.deviantart.com/tinajra/art/Grand-Master-Warframe-Wallpaper-4K-622787300))
+- The workspace icons are characters from the Inscriptional Parthian langauge; `U+10B40` to `U+10B5F`
+  - It doesn't mean anything, but it's all in the name of _*A E S T H E T I Q U E*_
+  - The Universalia font provides them
 - All images/media belong to their respective owners
