@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ "$1" = "on" ]; then
+    echo 'on' > '/sys/bus/usb/devices/usb1/power/control'
+    echo 'on' > '/sys/bus/usb/devices/usb2/power/control'
+else
+    echo 'auto' > '/sys/bus/usb/devices/usb1/power/control'
+    echo 'auto' > '/sys/bus/usb/devices/usb2/power/control'
+fi

@@ -1,0 +1,2 @@
+#!/bin/bash
+cat ~/.local/share/remarkify/prefix $1 ~/.local/share/remarkify/suffix > $2
