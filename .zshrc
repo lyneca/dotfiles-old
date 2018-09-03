@@ -5,7 +5,8 @@ source $HOME/bin/antigen.zsh
 
 # ZSH is full of bloat, use antigen instead
 antigen bundle oh-my-zsh
-antigen theme "lyneca/geometry"
+antigen theme lyneca/geometry
+antigen bundle jedahan/geometry-hydrate
 
 # antigen bundle zsh-users/zsh-history-substring-search
 
@@ -16,9 +17,12 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle heroku
 antigen bundle pip
 antigen bundle command-not-found
+antigen bundle srijanshetty/zsh-pandoc-completion
+antigen bundle lyneca/zsh-note-completion
 
 # Geometry Config
 export GEOMETRY_PROMPT_PLUGINS=(exec_time virtualenv jobs git hg node rustup)
+
 PROMPT_GEOMETRY_COLORIZE_ROOT=true
 PROMPT_GEOMETRY_EXEC_TIME=true
 
@@ -28,10 +32,15 @@ GEOMETRY_SYMBOL_PROMPT=")>"                  # default prompt symbol
 GEOMETRY_SYMBOL_RPROMPT="╶ "                # multiline prompts
 GEOMETRY_SYMBOL_EXIT_VALUE=")>"              # displayed when exit value is != 0
 GEOMETRY_SYMBOL_ROOT="}>"                    # when logged in user is root
+
 GEOMETRY_PROMPT_PREFIX="\n"
 GEOMETRY_PROMPT_PREFIX_SPACER=""
-GEOMETRY_DIR_SPACER="\n"
 GEOMETRY_PROMPT_SUFFIX="$"
+PROMPT_GEOMETRY_RPROMPT_ASYNC=true
+
+GEOMETRY_DIR_SPACER="\n"
+
+GEOMETRY_PLUGIN_HYDRATE_INTERVAL=0
 
 export HISTFILE=$HOME/.zsh_history
 export SAVEHIST=10000
@@ -66,3 +75,6 @@ bindkey -v \
 
 bindkey -M vicmd 'K' run-help
 
+eval $(keychain --eval --quiet id_rsa)
+
+zstyle ':completion:*' file-patterns '%p:globbed-files:'
