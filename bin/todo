@@ -1,1 +1,2 @@
+#!/bin/bash
 nvim $HOME/.todo.md
