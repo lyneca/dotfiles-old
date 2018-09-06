@@ -15,6 +15,12 @@
     border: 0 !important;
 }
 
+
+#window-controls,
+.closing-tabs-spacer {
+  display: none !important;
+}
+
 /* Adjust Colors */
 .tab-background:not([selected="true"]),
 .tab-background[selected="true"],
@@ -25,7 +31,8 @@
 #nav-bar,
 menuitem,
 menupopup,
-menu {
+menu,
+.scrollbox-innerbox {
     background-color: var(--color0) !important;
     background: var(--color0) !important;
     color: var(--color6) !important;
