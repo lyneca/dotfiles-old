@@ -9,10 +9,12 @@ if dein#load_state('~/.cache/dein')
     call dein#begin('~/.cache/dein')
 
     call dein#add('~/.cache/dein')
+   
     " Languages
     call dein#add('cespare/vim-toml')
     call dein#add('rust-lang/rust.vim')
     call dein#add('JulesWang/css.vim')
+    call dein#add('gabrielelana/vim-markdown')
 
     " Appearance
     call dein#add('lyneca/wal.vim')
@@ -36,6 +38,10 @@ if dein#load_state('~/.cache/dein')
     call dein#add('mattn/emmet-vim')
     call dein#add('scrooloose/nerdcommenter')
     call dein#add('godlygeek/tabular')
+
+    " Useless shit
+    call dein#add('dixonary/vimty')
+    
     call dein#end()
     call dein#save_state()
 endif
@@ -163,8 +169,10 @@ vnoremap <right> <nop>
 
 nnoremap <esc> :noh<return><esc>
 " Commands
-command! Pdf execute "!md2pdf \"%\" \"%:r.pdf\" --css=/usr/share/github.css"
+command! Pdf execute "!pdf %"
 command! -nargs=1 C execute "tabnew <args>.c | vnew <args>.h | wincmd r | wincmd h"
+
+let g:markdown_enable_spell_checking = 0
 
 function Header()
     if filereadable(expand("%:r") . ".h")
