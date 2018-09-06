@@ -41,7 +41,7 @@ font-3 = Saweri:size=13:antialias=false;-2
 font-4 = Termsynu:size=8;1
 
 modules-left = i3
-modules-right = updates-arch-combined dots volume wireless-network battery date
+modules-right = updates-arch-combined todo dots volume vpn wireless-network battery date
 
 [bar/bottom]
 ;monitor = eDP-1
@@ -161,19 +161,25 @@ format-connected-foreground = ${colors.color02}
 label-connected = %local_ip%
 label-connected-foreground = ${colors.color03}
 
+[module/ucpu]
+type = custom/script
+exec = sh ~/.config/polybar/ucpu.sh
+format-foreground = ${colors.color02}
+interval = 10
+
 [module/hdd]
 type = custom/script
-exec = sh ~/.config/polybar/size.sh /dev/mmcblk0p3 H 16000 20000
+exec = sh ~/.config/polybar/size.sh /dev/mmcblk0p3 H 70 90
 interval = 10
 
 [module/sd]
 type = custom/script
-exec = sh ~/.config/polybar/size.sh /dev/mmcblk1p1 S 10000 14000
+exec = sh ~/.config/polybar/size.sh /dev/mmcblk1p1 S 50 80
 interval = 10
 
 [module/tmp]
 type = custom/script
-exec = sh ~/.config/polybar/size.sh /tmp T 900 1500
+exec = sh ~/.config/polybar/size.sh /tmp T 30 50
 interval = 10
 
 [module/cache]
@@ -189,8 +195,14 @@ interval = 10
 [module/dots]
 type = custom/script
 exec = sh ~/.config/polybar/dots.sh
-format = %{A:run_term echo hello:}<label>%{A}
+format = <label>
 interval = 10
+
+[module/todo]
+type = custom/script
+exec = sh ~/.config/polybar/todo.sh
+format = <label>
+interval = 1
 
 [module/cpu]
 type = internal/cpu
@@ -207,22 +219,22 @@ ramp-coreload-1-font = 2
 ramp-coreload-1-foreground = ${colors.color01}
 ramp-coreload-2 = ▃
 ramp-coreload-2-font = 2
-ramp-coreload-2-foreground = ${colors.color01}
+ramp-coreload-2-foreground = ${colors.color02}
 ramp-coreload-3 = ▄
 ramp-coreload-3-font = 2
-ramp-coreload-3-foreground = ${colors.color01}
+ramp-coreload-3-foreground = ${colors.color03}
 ramp-coreload-4 = ▅
 ramp-coreload-4-font = 2
-ramp-coreload-4-foreground = #fba922
+ramp-coreload-4-foreground = ${colors.color04}
 ramp-coreload-5 = ▆
 ramp-coreload-5-font = 2
-ramp-coreload-5-foreground = #fba922
+ramp-coreload-5-foreground = ${colors.color05}
 ramp-coreload-6 = ▇
 ramp-coreload-6-font = 2
-ramp-coreload-6-foreground = #ff5555
+ramp-coreload-6-foreground = ${colors.color06}
 ramp-coreload-7 = █
 ramp-coreload-7-font = 2
-ramp-coreload-7-foreground = #ff5555
+ramp-coreload-7-foreground = ${colors.color07}
 
 [module/date]
 type = internal/date
@@ -278,6 +290,13 @@ bar-progress-fill-font = 3
 bar-progress-empty = ─
 bar-progress-empty-font = 3
 bar-progress-empty-foreground = #44
+
+[module/vpn]
+type = custom/script
+exec = ~/.config/polybar/vpn.sh
+format = <label>
+format-foreground = ${colors.color03}
+interval = 10
 
 [module/wireless-network]
 type = internal/network
@@ -362,7 +381,7 @@ menu-2-1-foreground = #fba922
 menu-2-1-exec = menu_open-0
 
 [module/updates-arch-combined]
-format = %{A:termite --title=floating -e 'zsh -c "cat ~/.cache/wal/sequences && sudo pacman -Syu && zsh"' &:}<label>%{A}
+format =<label>
 format-foreground = ${colors.color05}
 type = custom/script
 exec = sh  ~/.config/polybar/updates-arch-combined.sh
