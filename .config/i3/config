@@ -42,9 +42,10 @@ bindsym $mod+shift+Pause exec --no-startup-id zenity --question --text "Reboot?"
 # Lock Screen
 bindsym $mod+Delete exec --no-startup-id betterlockscreen -l
 
-
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
+
+focus_on_window_activation focus
 
 # start a terminal
 bindsym $mod+Return exec kitty
@@ -144,14 +145,15 @@ bindsym $mod+grave scratchpad show
 bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
-bindsym Print                      exec gnome-screenshot
-bindsym --release Ctrl+Print       exec gnome-screenshot -w
-bindsym --release Shift+Print      exec gnome-screenshot -a
+bindsym --release Print            exec sc
+bindsym --release Ctrl+Print       exec sc -c
+bindsym --release Shift+Print      exec sc -s
+bindsym --release Ctrl+Shift+Print exec sc -sc
 
 bindsym $mod+w exec qutebrowser
 bindsym $mod+shift+w exec firefox --new-window
 bindsym $mod+g exec --no-startup-id search
-bindsym $mod+o exec --no-startup-id open_dir
+bindsym $mod+o exec --no-startup-id sites
 bindsym $mod+n exec thunar
 bindsym $mod+p exec ~/bin/rofi-monitor
 
@@ -178,6 +180,8 @@ set $ws7 "7:𐭟"
 set $ws8 "8:𐭒"
 
 # 𐭇 𐭒 𐭟 𐭐 𐭔 𐭈 𐭅 𐭕
+# 𐭇𐭒𐭟𐭐𐭔𐭈𐭅𐭕
+
 
 # toggle randr output
 bindsym $mod+semicolon move workspace to output right
