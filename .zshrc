@@ -3,7 +3,7 @@ cat ~/.cache/wal/sequences
 
 source $HOME/bin/antigen.zsh
 
-# ZSH is full of bloat, use antigen instead
+# oh-my-zsh is full of bloat, use antigen instead
 antigen bundle oh-my-zsh
 antigen theme lyneca/geometry
 antigen bundle jedahan/geometry-hydrate
@@ -18,7 +18,7 @@ antigen bundle heroku
 antigen bundle pip
 antigen bundle command-not-found
 antigen bundle srijanshetty/zsh-pandoc-completion
-antigen bundle lyneca/zsh-note-completion
+antigen bundle lyneca/zsh-mdn-completion
 
 # Geometry Config
 export GEOMETRY_PROMPT_PLUGINS=(exec_time virtualenv jobs git hg node rustup)
