@@ -1,8 +1,10 @@
 [user]
-	email = atraguliauniliantauthr@gmail.com
-	name = Lyneca
+	email = lukemtuthill@gmail.com
+	name = Luke Tuthill
 [alias]
 	alias = --list
 [core]
 	editor = nvim
 	hooksPath = /home/lyneca/.config/git/hooks
+[push]
+	default = upstream
