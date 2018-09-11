@@ -66,7 +66,7 @@ font-0 = RobotoMono:size=8:antialias=false;3
 font-1 = FontAwesome:size=10;2
 font-2 = Termsynu:size=8:antialias=false;3
 
-modules-left = hdd sd tmp cache usb
+modules-left = hdd sd aux tmp cache usb
 modules-right = cmus ip cpu memory
 
 wm-restack = i3
@@ -175,6 +175,11 @@ interval = 10
 [module/sd]
 type = custom/script
 exec = sh ~/.config/polybar/size.sh /dev/mmcblk1p1 S 50 80
+interval = 10
+
+[module/aux]
+type = custom/script
+exec = sh ~/.config/polybar/size.sh /media/aux A 30 50
 interval = 10
 
 [module/tmp]
