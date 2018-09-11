@@ -4,7 +4,7 @@ alias update="pacman -Syu"
 alias oops='sudo $(fc -ln -1)'
 alias please='sudo '
 alias venv="python3 -m venv "
-alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias cfg='/usr/bin/hub --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vim=nvim
 alias mutt='neomutt'
 alias ls="ls --color"
