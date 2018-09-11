@@ -14,13 +14,12 @@ if dein#load_state('~/.cache/dein')
     call dein#add('cespare/vim-toml')
     call dein#add('rust-lang/rust.vim')
     call dein#add('JulesWang/css.vim')
-    call dein#add('gabrielelana/vim-markdown')
+    " call dein#add('gabrielelana/vim-markdown')
 
     " Appearance
     call dein#add('lyneca/wal.vim')
     call dein#add('itchyny/lightline.vim')
     call dein#add('junegunn/goyo.vim')
-    call dein#add('amix/vim-zenroom2')
     call dein#add('yggdroot/indentline')
 
     " External Extensions
