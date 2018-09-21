@@ -1,7 +1,7 @@
 # Path to your antigen installation.
 cat ~/.cache/wal/sequences
 
-source $HOME/bin/antigen.zsh
+source $HOME/.zsh/antigen.zsh
 
 # oh-my-zsh is full of bloat, use antigen instead
 antigen bundle oh-my-zsh
@@ -78,3 +78,7 @@ bindkey -M vicmd 'K' run-help
 eval $(keychain --eval --quiet id_rsa)
 
 zstyle ':completion:*' file-patterns '%p:globbed-files:'
+
+export TRELLO_USER=$(grep user $HOME/.config/.3llo | cut -f 2)
+export TRELLO_KEY=$(grep key $HOME/.config/.3llo | cut -f 2)
+export TRELLO_TOKEN=$(grep token $HOME/.config/.3llo | cut -f 2)
