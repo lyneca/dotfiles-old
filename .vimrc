@@ -14,7 +14,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('cespare/vim-toml')
     call dein#add('rust-lang/rust.vim')
     call dein#add('JulesWang/css.vim')
-    " call dein#add('gabrielelana/vim-markdown')
+    call dein#add('sophacles/vim-processing')
 
     " Appearance
     call dein#add('lyneca/wal.vim')
@@ -38,6 +38,8 @@ if dein#load_state('~/.cache/dein')
     call dein#add('scrooloose/nerdcommenter')
     call dein#add('godlygeek/tabular')
 
+    call dein#add('plasticboy/vim-markdown')
+
     " Useless shit
     call dein#add('dixonary/vimty')
     
@@ -52,6 +54,8 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=0
 set expandtab
+
+set nowrap
 
 set fillchars=vert:┃,fold:-
 
@@ -70,8 +74,10 @@ set guifont=InputMono:h10
 colorscheme wal 
 highlight NonText ctermbg=none guibg=NONE
 
-let g:indentLine_char='|'
+let g:indentLine_char='│'
 let g:indentLine_color_term=235
+
+autocmd FileType markdown let g:indentLine_enabled=0
 
 set background=dark
 set laststatus=2
@@ -135,7 +141,9 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:ale_completion_enabled = 0
-" let g:ale_linters = {'rust': ['rls']}
+let g:ale_linters = {'python': ['pylint']}
+
+let g:ale_python_pylint_options = '--extension-pkg-whitelist=pygame'
 " let g:ale_sign_column_always = 1
 
 set sessionoptions=blank,winsize,tabpages,resize
@@ -146,8 +154,6 @@ set noeb novb t_vb=
 
 " Fullscreen button. Windows only.
 " map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
-
-let g:ycm_server_python_interpreter = '/usr/bin/python2'
 
 " Hacker Mode
 noremap <up> <nop>
@@ -171,7 +177,11 @@ nnoremap <esc> :noh<return><esc>
 command! Pdf execute "!pdf %"
 command! -nargs=1 C execute "tabnew <args>.c | vnew <args>.h | wincmd r | wincmd h"
 
-let g:markdown_enable_spell_checking = 0
+let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_conceal=0
+let g:vim_markdown_math=1
+let g:vim_markdown_new_list_item_indent=0
+hi htmlH1 ctermfg=6
 
 function Header()
     if filereadable(expand("%:r") . ".h")
@@ -183,3 +193,5 @@ endfunction
     " let autocommands_loaded = 1
     " autocmd FileType c call Header()
 " endif
+
+set conceallevel=0
