@@ -19,13 +19,15 @@ elif [ $select = true ]; then
 fi
 
 if [ $clip = true ]; then
-    maim $ARGS -lc 0.819,0.686,0.447,0.1 | xclip -selection clipboard -t image/png
+    maim $ARGS -luc 0.819,0.686,0.447,0.1 | xclip -selection clipboard -t image/png
 else
     filename="$HOME/screenshots/$(date +%DT%T | tr '/' '-').png"
     touch $filename
-    maim $ARGS -lc 0.819,0.686,0.447,0.1 > "$filename"
+    maim $ARGS -luc 0.819,0.686,0.447,0.1 > "$filename"
     if [ "$(du $filename | cut -f 1)" -eq 0 ]; then
         rm $filename
+    else
+        ln -fs $filename $HOME/screenshots/latest.png
     fi
 fi
 
