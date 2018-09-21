@@ -155,7 +155,9 @@ bindsym $mod+shift+w exec firefox --new-window
 bindsym $mod+g exec --no-startup-id search
 bindsym $mod+o exec --no-startup-id sites
 bindsym $mod+n exec thunar
-bindsym $mod+p exec ~/bin/rofi-monitor
+bindsym $mod+Shift+x exec xkcdunst
+bindsym $mod+m exec emojenu
+bindsym $mod+p exec passmenu
 
 bindsym $mod+F6 exec ~/bin/toggle_saturation
 # bindsym $mod+s layout stacking
@@ -338,9 +340,6 @@ gaps outer 8
 
 # smart_gaps on
 # smart_borders on
-
-# hide/unhide i3status bar
-bindsym $mod+m bar mode toggle
 
 #bar {
 #  position top
