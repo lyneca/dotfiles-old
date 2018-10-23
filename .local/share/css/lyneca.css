@@ -11,6 +11,15 @@ hr {
     page-break-after: always;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    /* box-sizing: border-box; */
+    border: 2px dashed black;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: lighter;
 }
@@ -21,22 +30,19 @@ h1 {
 }
 
 h2 {
-    margin: 30px auto;
-    max-width: 400px;
-    font-size: 27px;
-    text-align: center;
+    font-size: 24px;
     page-break-after: avoid;
 }
 
-h2:before {
-    content: "-- ";
-    color: #999999;
-}
+/* h2:before { */
+    /* content: "-- "; */
+    /* color: #999999; */
+/* } */
 
-h2:after {
-    content: " --";
-    color: #999999;
-}
+/* h2:after { */
+    /* content: " --"; */
+    /* color: #999999; */
+/* } */
 
 h3 {
     font-size: 22px;
@@ -53,7 +59,7 @@ h4 {
 }
 
 h4:before {
-    content: "// ";
+    content: "/// ";
     color: #999999;
 }
 
@@ -91,6 +97,11 @@ pre {
     border-radius: 5px;
 }
 
+table {
+    margin: 20px;
+    page-break-inside: avoid;
+}
+
 table, td, th {
     border-collapse: collapse;
     border: 1px solid #999999;
@@ -102,7 +113,7 @@ td, th {
 
 code {
     background-color: #eeeeee;
-    padding: 2px;
+    padding: 1px;
     border-radius: 3px;
 }
 
