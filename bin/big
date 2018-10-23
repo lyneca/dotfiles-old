@@ -1,2 +1,2 @@
 #!/bin/bash
-du -ad 1 2>/dev/null | sort -k 1n | numfmt --to=si --suffix=B --padding=7 --from-unit=1000
+du -ahd 1 2>/dev/null | sort -hk 1n

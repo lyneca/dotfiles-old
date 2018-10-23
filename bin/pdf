@@ -2,7 +2,7 @@
 pandoc \
     --katex=$HOME/.local/share/katex/ \
     --self-contained \
-    --from=markdown+tex_math_dollars+emoji \
+    --from=markdown+tex_math_dollars+emoji+latex_macros+all_symbols_escapable \
     -t html \
     --css ~/.local/share/css/lyneca.css \
     -o ${1%.*}.pdf \
