@@ -141,7 +141,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:ale_completion_enabled = 0
-let g:ale_linters = {'python': ['pylint']}
+let g:ale_linters = {'python': ['pylint'], 'java': ['javac']}
 
 let g:ale_python_pylint_options = '--extension-pkg-whitelist=pygame'
 " let g:ale_sign_column_always = 1
