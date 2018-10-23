@@ -150,7 +150,7 @@ bindsym --release Ctrl+Print       exec scr -c
 bindsym --release Shift+Print      exec scr -s
 bindsym --release Ctrl+Shift+Print exec scr -sc
 
-bindsym $mod+w exec qutebrowser
+bindsym $mod+w exec firefox --new-window
 bindsym $mod+shift+w exec firefox --new-window
 bindsym $mod+g exec --no-startup-id search
 bindsym $mod+o exec --no-startup-id sites
