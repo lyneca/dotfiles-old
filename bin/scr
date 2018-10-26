@@ -2,28 +2,36 @@
 clip=false
 window=false
 select=false
+pad=false
 
-while getopts "wcs" opt; do
+while getopts "wcsp" opt; do
     case "$opt" in
         w) window=true;;
         c) clip=true;;
         s) select=true;;
+        p) pad=true;;
     esac
 done
 
+ARGS="-u "
 
-if [ $window = true ]; then
-    ARGS+="-i $(xdotool getactivewindow) "
-elif [ $select = true ]; then
-    ARGS+="-s "
+if [ $pad = true ]; then
+    ARGS+="-g $(slop -lc 0.819,0.686,0.447,0.1 -p 10) "
+else
+    if [ $window = true ]; then
+        ARGS+="-i $(xdotool getactivewindow) "
+    elif [ $select = true ]; then
+        ARGS+="-s "
+    fi
+    ARGS+="-lc 0.819,0.686,0.447,0.1 "
 fi
 
 if [ $clip = true ]; then
-    maim $ARGS -luc 0.819,0.686,0.447,0.1 | xclip -selection clipboard -t image/png
+    maim $ARGS | xclip -selection clipboard -t image/png
 else
     filename="$HOME/screenshots/$(date +%DT%T | tr '/' '-').png"
     touch $filename
-    maim $ARGS -luc 0.819,0.686,0.447,0.1 > "$filename"
+    maim $ARGS > "$filename"
     if [ "$(du $filename | cut -f 1)" -eq 0 ]; then
         rm $filename
     else
