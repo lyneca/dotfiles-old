@@ -122,7 +122,7 @@ bindsym $mod+f fullscreen toggle
 # bindsym $mod+Ctrl+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle  
+bindsym $mod+Shift+space floating toggle
 bindsym $mod+t exec --no-startup-id ~/bin/i3ipc_hideshow_border
 
 # change focus between tiling / floating windows
@@ -227,7 +227,7 @@ for_window [instance="rofi"] border none
 for_window [instance="surf"] border pixel 2
 for_window [class="Thunar"] border none 
 for_window [instance="kitty"] border pixel 2 
-for_window [instance="kitty" title="floating"] move scratchpad, border pixel 2, resize set 600 px 400 px, scratchpad show
+for_window [instance="kitty" title="floating"] move scratchpad, border pixel 2, resize set 600 px 400 px, move window position $(((1366/2) - 300)) $(((768/2) - 200)), scratchpad show
 for_window [title="alsamixer"] floating enable border pixel 1
 # for_window [title="GitKraken"] floating enable 
 for_window [class="GParted"] floating enable border normal
