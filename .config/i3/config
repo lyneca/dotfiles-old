@@ -145,10 +145,12 @@ bindsym $mod+grave scratchpad show
 bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
-bindsym --release Print            exec scr
-bindsym --release Ctrl+Print       exec scr -c
-bindsym --release Shift+Print      exec scr -s
-bindsym --release Ctrl+Shift+Print exec scr -sc
+bindsym --release Print             exec scr
+bindsym --release Ctrl+Print        exec scr -c
+bindsym --release Shift+Print       exec scr -s
+bindsym --release Ctrl+Shift+Print  exec scr -sc
+bindsym --release Mod1+Sys_Req      exec scr -p
+bindsym --release Ctrl+Mod1+Sys_Req exec scr -pc
 
 bindsym $mod+w exec firefox --new-window
 bindsym $mod+shift+w exec firefox --new-window
