@@ -15,6 +15,8 @@ if dein#load_state('~/.cache/dein')
     call dein#add('rust-lang/rust.vim')
     call dein#add('JulesWang/css.vim')
     call dein#add('sophacles/vim-processing')
+    call dein#add('pangloss/vim-javascript')
+    call dein#add('mxw-jsx')
 
     " Appearance
     call dein#add('lyneca/wal.vim')
@@ -73,6 +75,12 @@ set backspace=indent,eol,start
 set guifont=InputMono:h10
 colorscheme wal 
 highlight NonText ctermbg=none guibg=NONE
+
+let g:user_emmet_settings = {
+  \  'javascript.jsx' : {
+    \      'extends' : 'jsx',
+    \  },
+  \}
 
 let g:indentLine_char='│'
 let g:indentLine_color_term=235
