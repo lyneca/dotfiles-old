@@ -37,7 +37,7 @@ export color15
 export POLYBAR_DATE_LABEL="%{F$color2}%date%%{F-}"
 export POLYBAR_TIME_LABEL="%{F$color3}%time%%{F-}"
 
-export MDN_CSS_FILE="$HOME/.local/share/css/lyneca.css"
+export MDN_CSS_FILE="$HOME/.local/share/css/homesick.css"
 
 setxkbmap -option caps:escape
 setxkbmap -option compose:ralt
