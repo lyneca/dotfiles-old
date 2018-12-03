@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/usr/share/backgrounds/warframe.png",
+    "alpha": "100",
+    "special": {
+        "background": "#faf9f7",
+        "foreground": "#131314",
+        "cursor": "#131314"
+    },
+    "colors": {
+        "color0": "#faf9f7",
+        "color1": "#6B6154",
+        "color2": "#71706D",
+        "color3": "#887863",
+        "color4": "#7F807F",
+        "color5": "#9C8B72",
+        "color6": "#D1AF72",
+        "color7": "#131314",
+        "color8": "#87837c",
+        "color9": "#6B6154",
+        "color10": "#71706D",
+        "color11": "#887863",
+        "color12": "#7F807F",
+        "color13": "#9C8B72",
+        "color14": "#D1AF72",
+        "color15": "#131314"
+    }
+}
